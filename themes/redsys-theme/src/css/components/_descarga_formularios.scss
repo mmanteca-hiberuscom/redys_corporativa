@@ -1,0 +1,106 @@
+.rights-files {
+    &__container {
+        margin-top: 76px;
+        margin-bottom: 112px;
+
+        @media (max-width: $breakpoint-max-lg) {
+                margin-top: 40px;
+                margin-bottom: 48px;
+        }
+    }
+
+    &-header {
+        &__title {
+            @include h3-semibold;
+            color: var(--text-color-default);
+            margin-bottom: 40px;
+        }
+
+        &__description {
+            @include rich-text-style;
+            margin-top: 24px;
+            color: var(--text-color-default);
+
+            p {
+                @include body1-regular;
+                margin-bottom: 2rem;
+
+                @media (max-width: $breakpoint-max-lg) {
+                    @include body2-regular;
+                    margin-bottom: 22px;
+                }
+
+                strong {
+                    @include body1-semibold;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        .rights-files-link__container {
+            .right-files-link-list {
+                list-style: none;
+                padding-left: 0;
+
+                &__element {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid var(--gray-200);
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+
+                    @media (max-width: $breakpoint-max-lg) {
+                      padding-bottom: 16px;
+                        padding-top: 16px;
+                    }
+
+                    .element_title {
+                        @include h6-semibold;
+                        text-align: left;
+                        color: var(--gray-900);
+                        word-break: break-word;
+
+                        @media (max-width: $breakpoint-max-lg) {
+                            @include body1-semibold;
+                            text-align: left;
+                            width: 85%;
+                        }
+                    }
+
+                    .element_link {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-decoration: none;
+                        color: var(--black);
+                        max-height: 91px;
+
+                        @media (max-width: $breakpoint-max-lg) {
+                           max-height: 80px;
+                        }
+
+                        &-image {
+                            min-width: 32px;
+                            height: 32px;
+                            fill: var(--primary-orange);
+                            margin-bottom: 8px;
+                            margin-top: 8px;
+                        }
+
+                        &-text {
+                            @include body2-regular;
+                            text-align: center;
+                            color: var(--text-secondary-redsys);
+
+                            @media (max-width: $breakpoint-max-lg) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

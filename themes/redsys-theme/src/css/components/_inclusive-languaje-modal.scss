@@ -1,0 +1,85 @@
+.inclusive-modal {
+    .modal {
+        padding-right: 0;
+    }
+
+    &__container {
+        border-radius: 24px;
+        background: var(--white);
+        text-align: left;
+        width: 848px;
+        position: relative;
+
+        @media (max-width: $breakpoint-max-lg) {
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    &__dialog {
+        max-width: 848px;
+        display: flex;
+    }
+
+    &__content {
+        width: 848px;
+        border-radius: 24px;
+    }
+
+    &__header {
+        align-items: center;
+        border-color: var(--gray-200);
+        border-style: solid;
+        border-width: 0 0 0.0625rem 0;
+        z-index: 1;
+        height: auto;
+        padding: 32px;
+    }
+
+    &__title {
+        @include h5-semibold;
+        color: var(--text-color-default);
+        text-align: left;
+    }
+
+    &__body {
+        @include body1-regular;
+        color: var(--text-color-default);
+        text-align: left;
+        padding-left: 32px;
+        padding-bottom: 40px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-top: 0px;
+        padding-top: 24px;
+        padding-right: 32px
+    }
+
+    &__footer {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        border-top: none;
+        padding: 0;
+    }
+
+    &__btn {
+        width: 248px;
+        height: 46px;
+
+        &::after {
+            display: none;
+            content: none;
+        }
+    }
+    
+    @media (max-width: $breakpoint-max-lg) {
+        &__header {
+            padding: 24px;
+        }
+
+        &__body {
+            padding: 24px 24px 40px 24px;
+        }
+    }
+}

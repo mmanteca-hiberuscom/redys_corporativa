@@ -1,0 +1,66 @@
+html[style*="font-size: 120%"] ,
+html[style*="font-size: 130%"] ,
+html[style*="font-size: 140%"] ,
+html[style*="font-size: 150%"] {
+
+    .distributor-icon{
+        &__text, 
+        &__text p {
+            max-width: 115px;
+        }
+        &__item .distributor-icon__item--btn{
+            min-width: 120px;
+            min-height: 115px;
+        }
+    }
+    
+    .cmp-image-mosaic {
+        .image-mosaic {
+            &__text, 
+            &__text p {
+                max-width: 318px;
+            }
+        }
+    }
+
+    .service-status {
+        &__button {
+            max-width: 324px;
+        }
+    }
+
+    .column-tabs {
+        &__item {
+            width: 150px;
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1380px) {
+	html[style*="font-size: 120%"],
+	html[style*="font-size: 130%"],
+	html[style*="font-size: 140%"] {
+
+		.header .container-menu ul {
+			flex-wrap: wrap;
+			gap: 24px;
+			justify-content: center;
+		}
+
+		.header .container-menu ul li {
+			padding: 16px 0;
+			max-width: 205px;
+			text-align: center;
+		}
+
+		.header .container-menu ul li a,
+		.header .supramenu ul li a {
+			display: inline-block;
+			max-width: 100%;
+			white-space: normal;
+			word-break: break-word;
+			overflow-wrap: break-word;
+			text-align: center;
+		}
+	}
+}

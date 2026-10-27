@@ -1,0 +1,33 @@
+
+
+/* Deshabilitar animaciones cuando se activa la opción */
+body.no-animations *,
+body.no-animations *::before,
+body.no-animations *::after {
+    animation: none !important;
+    transition: none !important;
+}
+body.no-animations{
+    .hero-banner-animation .word.active {
+        opacity: 1;
+        bottom: 61px;
+    }
+    .cmp-image-mosaic .image-mosaic__arrow{
+        right: 35%;
+    }
+    @media (max-width: $breakpoint-max-lg) {
+        .hero-banner-animation .word.active {
+            bottom: 35px;
+        }
+
+    }
+}
+
+
+/* Respeta la preferencia del usuario para reducir movimientos */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

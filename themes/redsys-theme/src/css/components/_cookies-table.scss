@@ -1,0 +1,57 @@
+.table-responsive-cookies {
+    width: 100%;
+    overflow-x: auto;
+    p{
+        @include body1-semibold;
+        text-align: left;
+    }
+    .table-responsive-cookies-content {
+        table-layout: fixed;
+        width: 100%;
+        border: 1px solid var(--brand-color-1) ;
+        border-collapse: collapse;
+
+        th,
+        td {
+            @include body1-semibold;
+            vertical-align: top; 
+            p{
+                @include body1-regular;
+            }
+            border: 1px solid var(--brand-color-1);
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            white-space: normal;
+            padding: 12px 24px;
+        }
+    }
+
+    @media (max-width: $breakpoint-max-lg) {
+        margin-left: -16px;
+        width: auto;
+        margin-right: -16px;
+        p{
+            @include body2-semibold;
+        }
+        .table-responsive-cookies-content {
+            th{
+                @include body2-regular;
+                font-weight: 700;
+                &.nameColumn{
+                    width: 75px;
+                }
+                &.purposeColumn{
+                    width: 115px;
+                }
+            }
+            th,
+            td {
+                p{
+                    @include body2-regular;
+                }
+                padding: 8px;
+            }
+        }
+    }
+}

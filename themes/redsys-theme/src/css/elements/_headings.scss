@@ -1,0 +1,28 @@
+@mixin heading-styles($size) {
+    font-size: var(--#{$size}-font-size);
+
+    &.font-weight-light { font-weight: var(--font-weight-light, 300); }
+    &.font-weight-normal { font-weight: var(--font-weight-normal, 400); }
+    &.font-weight-semi-bold { font-weight: var(--font-weight-semi-bold, 600); }
+    &.font-weight-bold { font-weight: var(--font-weight-bold, 700); }
+}
+h1, .h1 {
+    @include heading-styles(h1);
+}
+h2, .h2 {
+    @include heading-styles(h2);
+}
+h3, .h3 {
+    @include heading-styles(h3);
+}
+h4, .h4 {
+    @include heading-styles(h4);
+}
+
+h5, .h5 {
+    @include heading-styles(h5);
+}
+
+h6, .h6 {
+    @include heading-styles(h6);
+}

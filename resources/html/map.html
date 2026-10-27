@@ -1,0 +1,208 @@
+<section class="map">
+    <div class="map__container">
+
+        <div class="map-header">
+            <h2 class="map-header__title">Proyectos Internacionales</h2>
+            <p class="map-header__description">
+            En Redsys ampliamos nuestra presencia, llevando nuestros productos y servicios a distintos continentes.
+            </p>
+        </div>
+    
+        <!-- Desktop -->
+        <div class="map__wrapper d-none d-lg-block">
+            <div class="map__image-container">
+                <img src="/o/redsys-theme/images/components/map/map.png" alt="Mapa mundial" class="map__image">
+            
+                <ul class="map__dots">
+                    <li class="map__dot" style="top: 45.8%; left: 44.8%;"
+                        data-title="En Portugal"
+                        data-description="Servicios de adquiriencia y procesamiento crossborder."
+                        data-flag="/o/redsys-theme/images/components/map/portugal.png">
+                    </li>
+                    <li class="map__dot" style="top: 73.8%; left: 28%;"
+                        data-title="En Argentina"
+                        data-description="Servicios de adquiriencia y procesamiento crossborder."
+                        data-flag="/o/redsys-theme/images/components/map/argentina.png">
+                    </li>
+                </ul>
+                <div class="map__popup" id="map-popup">
+                    <div class="map__popup-header">
+                        <img class="map__popup-flag" id="popup-flag" src="" alt="Bandera">
+                        <h2 class="map__popup-title" id="map-popup__title"></h2>
+                    </div>
+                    <p class="map__popup-description" id="map-popup__description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="map__wrapper--mobile d-block d-lg-none">
+        <div class="map__image-container">
+            <img src="/o/redsys-theme/images/components/map/map-mob.png" alt="Mapa móvil" class="map__image">
+        </div>
+        <div class="map-accordion">
+            <div class="accordion" id="accordionMap">
+                
+                <!-- Gestionar ids de forma dinámica -->
+                <div class="map-accordion__card">
+                    <div class="map-accordion__card-header" id="headingContinent">
+                        <button class="map-accordion_button" type="button" data-toggle="collapse"
+                            data-target="#collapseContinent" aria-expanded="false" aria-controls="collapseContinent">
+                            Europa <span class="toggle-icon"></span>
+                        </button>
+                    </div>
+                    <div id="collapseContinent" class="collapse" aria-labelledby="headingContinent" data-parent="#accordionMap">
+                        <div class="map-accordion__card-body">
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry" aria-expanded="false" aria-controls="collapseCountry">
+                                        <img src="" alt="" class="flag">
+                                        <h3>Portugal</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry" class="collapse" aria-labelledby="headingCountry" data-parent="#accordionContinent">
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Definir las funciones antes de llamarlas
+function initMapDots() {
+    console.log("Ejecutando initMapDots()...");
+
+    const dots = document.querySelectorAll(".map__dot");
+    const popup = document.getElementById("map-popup");
+    const popupFlag = document.getElementById("popup-flag");
+    const popupTitle = document.getElementById("map-popup__title");
+    const popupDescription = document.getElementById("map-popup__description");
+
+    let activeDot = null;
+
+    if (!popup) return; 
+
+    popup.style.display = "none";
+
+    dots.forEach(dot => {
+        dot.removeEventListener("click", dotClickHandler);
+        dot.addEventListener("click", dotClickHandler);
+    });
+
+    function dotClickHandler(event) {
+        event.stopPropagation();
+
+        if (activeDot === this) {
+            resetDots();
+            activeDot = null;
+            popup.classList.remove("visible");
+            popup.style.display = "none";
+            return;
+        }
+
+        resetDots();
+        this.classList.add("selected");
+        activeDot = this;
+
+        dots.forEach(otherDot => {
+            if (otherDot !== this) {
+                otherDot.classList.add("inactive");
+            }
+        });
+
+        popupFlag.src = this.getAttribute("data-flag");
+        popupFlag.alt = `Bandera de ${this.getAttribute("data-title")}`;
+        popupTitle.textContent = this.getAttribute("data-title");
+        popupDescription.textContent = this.getAttribute("data-description");
+
+        if (!popupTitle.textContent.trim()) return;
+
+        popup.style.display = "block";
+
+        const dotX = this.offsetLeft + this.offsetWidth / 2;
+        const dotY = this.offsetTop;
+
+        const popupHeight = popup.offsetHeight;
+        const popupMargin = 20;
+        popup.style.top = `${dotY - popupHeight - popupMargin}px`;
+        popup.style.left = `${dotX}px`;
+        popup.classList.add("visible");
+    }
+
+    function resetDots() {
+        dots.forEach(dot => {
+            dot.classList.remove("selected", "inactive");
+        });
+    }
+
+    document.removeEventListener("click", closePopupHandler);
+    document.addEventListener("click", closePopupHandler);
+
+    function closePopupHandler(e) {
+        if (!popup.contains(e.target) && !e.target.classList.contains("map__dot")) {
+            popup.classList.remove("visible");
+            popup.style.display = "none";
+            resetDots();
+            activeDot = null;
+        }
+    }
+}
+
+function initAccordion() {
+    console.log("Ejecutando initAccordion()...");
+
+    const countryButtons = document.querySelectorAll(".map-accordion__country-button");
+
+    countryButtons.forEach(button => {
+        button.removeEventListener("click", accordionClickHandler);
+        button.addEventListener("click", accordionClickHandler);
+    });
+
+    function accordionClickHandler() {
+        const countryCard = this.closest(".map-accordion__country-card");
+        const collapse = countryCard.querySelector(".collapse");
+
+        const isActive = countryCard.classList.contains("active");
+
+        const continent = countryCard.closest(".map-accordion__card-body");
+        continent.querySelectorAll(".map-accordion__country-card").forEach(card => {
+            card.classList.remove("active");
+            card.querySelector(".collapse").classList.remove("show");
+        });
+
+        if (!isActive) {
+            countryCard.classList.add("active");
+            collapse.classList.add("show");
+        }
+    }
+}
+
+// Llamar a las funciones después de definirlas
+document.addEventListener("DOMContentLoaded", function () {
+    initMapDots();
+    initAccordion();
+});
+
+window.addEventListener("pageshow", function () {
+    initMapDots();
+    initAccordion();
+});
+
+// Detectar cambios en el DOM 
+const observer = new MutationObserver(() => {
+    console.log("Cambio detectado en el DOM, reinicializando eventos...");
+    initMapDots();
+    initAccordion();
+});
+
+// Observar cambios en todo el documento
+observer.observe(document.body, { childList: true, subtree: true });
+
+</script>

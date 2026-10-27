@@ -1,0 +1,263 @@
+/* Contenedor principal */
+.accessibility {
+    &-widget {
+        position: fixed;
+        right: 0;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        transform: translateZ(0); 
+        will-change: transform;
+        contain: layout;
+
+        &.open {
+            .accessibility-menu {
+                right: 0;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .accessibility-button {
+                transform: translateX(-275px);
+                border: 1px solid var(--brand-color-1);
+            }
+        }
+    }
+
+    &-button {
+        background: var(--btn-primary-background-color);
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        right: 0;
+        transition: transform 0.3s ease-in-out;
+        width: 60px;
+        height: 52px;
+        justify-content: center;
+        border: none;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+
+        &:hover {
+            border: 1px solid var(--btn-primary-border-color);
+        }
+
+        .accessibility-icon {
+            content: "";
+            background-image: url(../images/icons/Mono/accessibility.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &-menu {
+        background: white;
+        width: 276px;
+        height: auto;
+        padding: 0 20px;
+        border-radius: 32px 0 0 0;
+        border: 2px solid var(--btn-primary-border-color);
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+        position: absolute;
+        right: -240px;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            
+            li {
+                a {
+                    @include body2-regular;
+                    display: flex;
+                    padding: 12px 0;
+                    text-decoration: none;
+                    color: var(--text-color-default);
+                    line-height: normal;
+                    transition: background 0.3s ease-in-out;
+                    gap: 17px;
+                    align-items: center;
+                    border-bottom: 1px solid #E2E2E2;
+
+                    @media (max-width: 1024px) {
+                        font-size: 0.9rem;
+                        padding: 11px 0;
+                    }
+        
+                    &:hover {
+        
+                        i {
+                            filter: none;
+                        }
+        
+                        .increase-text {
+                            background-image: url(../images/icons/Color/High_text.svg);
+                        }
+        
+                        .decrease-text {
+                            background-image: url(../images/icons/Color/Low_text.svg);
+                        }
+        
+                        .disable-animations {
+                            background-image: url(../images/icons/Color/Pause.svg);
+                        }
+        
+                        .grayscale {
+                            background-image: url(../images/icons/Mono/Colour-1.svg);
+                        }
+        
+                        .high-contrast {
+                            background-image: url(../images/icons/Color/High_contrast.svg);
+                        }
+        
+                        .negative-contrast {
+                            background-image: url(../images/icons/Color/Neg_contrast.svg);
+                        }
+        
+                        .light-background {
+                            background-image: url(../images/icons/Color/Idea.svg);
+                        }
+        
+                        .underline-links {
+                            background-image: url(../images/icons/Color/Link.svg);
+                        }
+        
+                        .readable-font {
+                            background-image: url(../images/icons/Color/Letter.svg);
+                        }
+        
+                        .reset {
+                            background-image: url(../images/icons/Color/Reset.svg);
+                        }
+                    }
+        
+                    i {
+                        content: "";
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        min-width: 20px;
+                        height: 20px;
+                        display: flex;                
+                    }
+        
+                    .increase-text {
+                        background-image: url(../images/icons/Mono/High_text.svg);
+                    }
+        
+                    .decrease-text {
+                        background-image: url(../images/icons/Mono/Low_text.svg);
+                    }
+        
+                    .disable-animations {
+                        background-image: url(../images/icons/Mono/Pause.svg);
+                    }
+        
+                    .grayscale {
+                        background-image: url(../images/icons/Mono/Colour.svg);
+                    }
+        
+                    .high-contrast {
+                        background-image: url(../images/icons/Mono/High_contrast.svg);
+                    }
+        
+                    .negative-contrast {
+                        background-image: url(../images/icons/Mono/Neg_contrast.svg);
+                    }
+        
+                    .light-background {
+                        background-image: url(../images/icons/Mono/Idea.svg);
+                    }
+        
+                    .underline-links {
+                        background-image: url(../images/icons/Mono/Link.svg);
+                    }
+        
+                    .readable-font {
+                        background-image: url(../images/icons/Mono/Letter.svg);
+                    }
+        
+                    .reset {
+                        background-image: url(../images/icons/Mono/Reset.svg);
+                    }
+                }
+
+                &:last-of-type a {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    &-menu ul li a.active-setting {
+        font-weight: bold;
+        color: var(--brand-color-1); 
+
+        i {
+            filter: none;
+        }
+
+        .increase-text {
+            background-image: url(../images/icons/Color/High_text.svg);
+        }
+
+        .decrease-text {
+            background-image: url(../images/icons/Color/Low_text.svg);
+        }
+
+        .disable-animations {
+            background-image: url(../images/icons/Color/Pause.svg);
+        }
+
+        .grayscale {
+            background-image: url(../images/icons/Mono/Colour-1.svg);
+        }
+
+        .high-contrast {
+            background-image: url(../images/icons/Color/High_contrast.svg);
+        }
+
+        .negative-contrast {
+            background-image: url(../images/icons/Color/Neg_contrast.svg);
+        }
+
+        .light-background {
+            background-image: url(../images/icons/Color/Idea.svg);
+        }
+
+        .underline-links {
+            background-image: url(../images/icons/Color/Link.svg);
+        }
+
+        .readable-font {
+            background-image: url(../images/icons/Color/Letter.svg);
+        }
+
+        .reset {
+            background-image: url(../images/icons/Color/Reset.svg);
+        }
+    }
+}
+
+.buttons-container {
+    position: fixed;
+    bottom: 25%;
+    z-index: 1030;
+
+    @media (max-width: 1024px) {
+        bottom: 15%;
+    }
+}
+

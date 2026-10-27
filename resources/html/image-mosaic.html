@@ -1,0 +1,112 @@
+<section aria-labelledby="mosaic-title" class="cmp-image-mosaic">
+    <div class="image-mosaic__container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="image-mosaic__title" id="mosaic-title">Nuestros clientes</h2>
+
+                <p class="image-mosaic__description">En Redsys, ofrecemos servicios de procesamiento transaccional
+                    cubriendo toda la cadena de valor, principalmente en el sector de los medios de pago. Nuestra
+                    propiedad pertenece a los principales grupos bancarios del país, que a su vez son clientes, lo que
+                    posibilita una estabilidad en la toma de decisión y un enfoque exclusivo en la generación de valor.
+                </p>
+            </div>
+        </div>
+
+        <!-- Vista de 3 imágenes -->
+
+        <div class="image-mosaic--three" id="mosaic-three">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="image-mosaic__item"><img alt="Bloque 01" src="/documents/d/redsys/group-104" /></div>
+                </div>
+
+                <div class="col-8 col-md-4">
+                    <div class="image-mosaic__item"><img alt="Bloque 02" src="/documents/d/redsys/group-105" /></div>
+                </div>
+
+                <div class="col-4 col-md-2">
+                    <div class="image-mosaic__item"><img alt="Bloque 03" src="/documents/d/redsys/group-106" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Vista de 4 imágenes -->
+
+        <div class="image-mosaic--four d-none" id="mosaic-four">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="image-mosaic__item"><span class="image-mosaic__text">Transformando</span></div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="image-mosaic__item"><span class="image-mosaic__arrow">&nbsp;</span></div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="image-mosaic__item"><span class="image-mosaic__text">los medios</span> <img
+                            alt="Los medios" src="/documents/d/redsys/groupo1" /></div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="image-mosaic__item"><span class="image-mosaic__text">de pago</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const arrow = document.querySelector(".image-mosaic__arrow");
+    
+        if (arrow) {
+            arrow.style.position = "absolute";
+            arrow.style.left = "-10rem";
+            arrow.style.opacity = "0";
+            arrow.style.transition = "left 2s ease-in-out, opacity 1s ease-in-out";
+    
+            function getArrowPosition() {
+                const isMobile = window.innerWidth <= 768;
+                return isMobile ? "calc(50% - 1.5rem)" : "calc(50% - 3.25rem)";
+            }
+    
+            function moveArrow() {
+                let arrowPosition = getArrowPosition();
+    
+                setTimeout(() => {
+                    arrow.style.left = arrowPosition;
+                    arrow.style.opacity = "1";
+                    arrow.style.top = "50%";
+                    arrow.style.transform = "translateY(-50%)";
+                }, 500);
+    
+                setTimeout(() => {
+                    arrow.style.left = arrowPosition;
+                    arrow.style.opacity = "1";
+                }, 2500);
+    
+                setTimeout(() => {
+                    arrow.style.left = "150%"; 
+                    arrow.style.opacity = "0";
+                }, 4000);
+    
+                setTimeout(() => {
+                    arrow.style.transition = "none";
+                    arrow.style.left = "-10rem";
+                    arrow.style.opacity = "0";
+    
+                    setTimeout(() => {
+                        arrow.style.transition = "left 2s ease-in-out, opacity 1s ease-in-out";
+                        moveArrow();
+                    }, 100);
+                }, 5000);
+            }
+    
+            window.addEventListener("resize", () => {
+                arrow.style.left = getArrowPosition();
+            });
+    
+            moveArrow();
+        }
+    });
+</script>
+    

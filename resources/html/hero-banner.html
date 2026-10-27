@@ -1,0 +1,107 @@
+<section class="hero-banner">
+    <div class="hero-banner-content hero-banner-content-v2c  ">
+    <h3 class="hero-banner-title" style="display: none;">Canal Ético</h3>
+    
+    <div class="hero-banner-content-header" style="display: none;">
+    <h5 class="hero-banner-subtitle">En Redsys Innovamos los pagos del futuro, contigo como protagonista</h5>
+    
+    <div class="hero-banner-header-description"><button class="show-more">Mostrar más <i class="plus-icon"></i></button>
+    
+    <div class="full-text">En Redsys, impulsamos los pagos digitales gracias al talento de nuestro equipo, ofreciendo un entorno de innovación, crecimiento y colaboración.</div>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-12 col-lg-6 hero-banner-content-text"><!--si hay animacion se añade este contenedor -->
+    <div class="hero-banner-title-animation">
+    <h2>Comprometidos con la <span class="hero-banner-animation"> <span class="word active">eficiencia</span> <span class="word">innovación</span> <span class="word">confianza</span> <span class="word">seguridad</span> </span></h2>
+    
+    <h2>en cada transacción</h2>
+    </div>
+    
+    <div class="hero-banner-description">
+    <p>Prestamos servicios avanzados para la industria de medios de pago, adaptándonos a las necesidades específicas de nuestros clientes con la tecnología y experiencia que nos distingue</p>
+    </div>
+    
+    <div class="hero-banner-description" style="display: none;">
+    <p>El Canal Ético es una herramienta confidencial y segura, diseñada para proporcionar a los diferentes grupos de interés relacionados con el Grupo Redsys (empleados, clientes, proveedores y representantes de la sociedad en general) un espacio donde comunicar situaciones o dudas relacionadas con el cumplimiento del Código Ético o denunciar posibles conductas irregulares dentro de la compañía.</p>
+    
+    <p>Este canal asegura el cumplimiento de nuestras políticas y de las normativas legales aplicables, promoviendo una cultura ética, responsable y transparente.</p>
+    
+    <p>Esto incluye la capacidad de informar sobre casos que puedan suponer, entre otros:</p>
+    
+    <ul>
+        <li>Incumplimiento del Código Ético.</li>
+        <li>Posibles delitos penales.</li>
+        <li>Conductas contrarias a los derechos humanos reconocidos internacionalmente.</li>
+    </ul>
+    </div>
+    <!--boton opcional --><a class="cta-btn-orange"> Nuestros servicios </a></div>
+    <!--si se seleciona solo imagen col-lg-6 por el 12 -->
+    
+    <div class="col-12 col-lg-6 ">
+    <div class="hero-banner-content-img"><img alt="" class="img-desktop" src="/o/redsys-theme/images/img-hero/imagen1.PNG" /> <img alt="" class="img-movil" src="/o/redsys-theme/images/img-hero/imagen1mv.PNG" /></div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <script type="text/javascript">
+    
+        $(document).ready(function () {
+        let $words = $(".hero-banner-animation .word");
+        let index = 0;
+    
+        function changeWord() {
+            let $currentWord = $words.eq(index);
+            let nextIndex = (index + 1) % $words.length;
+            let $nextWord = $words.eq(nextIndex);
+    
+            // Anima la palabra actual para que desaparezca hacia arriba
+            $currentWord.css({
+                transform: "translateY(-100%)",
+                opacity: "0"
+            });
+    
+            // Resetea la palabra anterior para que no afecte la animación
+            setTimeout(() => {
+                $currentWord.css("transform", "translateY(80%)"); // Regresa a la posición inicial
+            }, 500);
+    
+            // Anima la siguiente palabra desde abajo hacia el centro
+            $nextWord.css({
+                transform: "translateY(-5%)",
+                opacity: "1"
+            });
+    
+            // Ajustamos clases para asegurar que solo una palabra esté activa
+            $currentWord.removeClass("active");
+            $nextWord.addClass("active");
+    
+            index = nextIndex; // Avanza al siguiente índice
+        }
+    
+        // Inicializa la primera palabra visible correctamente
+        $words.eq(index).addClass("active").css({
+            opacity: "1",
+            transform: "translateY(-5%)"
+        });
+    
+        setInterval(changeWord, 2000); // Cambia cada 2 segundos
+    
+        const $button = $(".show-more");
+        const $text = $(".full-text");
+    
+        $button.on("click", function () {
+            if ($text.is(":hidden")) {
+                $text.show();
+                $button.html("Mostrar menos <i class='plus-icon desactive'></i>");
+            } else {
+                $text.hide();
+                $button.html("Mostrar más <i class='plus-icon'></i>");
+            }
+        });
+    });
+    
+    
+    
+    </script>

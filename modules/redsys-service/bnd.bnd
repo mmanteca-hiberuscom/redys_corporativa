@@ -1,0 +1,5 @@
+Bundle-Name: redsys-service
+Bundle-SymbolicName: com.redsys.service
+Bundle-Version: 1.0.0
+Export-Package: com.redsys.service
+Import-Package: *;resolution:=optional

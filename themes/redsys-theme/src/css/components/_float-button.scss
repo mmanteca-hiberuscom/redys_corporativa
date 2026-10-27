@@ -1,0 +1,70 @@
+.component-social {
+    position: fixed;
+    right: 0;
+    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+
+    @media (max-width: 1025px) {
+        display: none;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        background: var(--white);
+        width: 60px;
+        height: 52px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        &:hover {
+            animation: expandButton 0.6s forwards ease;
+        }
+
+        &-tab {
+            width: 8px;
+            height: 52px;
+            background: var(--orange);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            width: 24px; 
+
+            .component-social__button:hover & {
+                width: min-content; 
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin: 0 10px;
+                cursor: pointer;
+            
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+@keyframes expandButton {
+    0% {
+        width: 60px;
+    }
+    
+    100% {
+        width: 140px;
+    }
+}

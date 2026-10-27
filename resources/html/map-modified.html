@@ -1,0 +1,352 @@
+<section class="map" aria-labelledby="map-title">
+    <div class="map__container">
+
+        <div class="map-header">
+            <h2 class="map-header__title" id="map-title">Proyectos Internacionales</h2>
+            <p class="map-header__description">
+            En Redsys ampliamos nuestra presencia, llevando nuestros productos y servicios a distintos continentes.
+            </p>
+        </div>
+    
+        <!-- Desktop -->
+        <div class="map__wrapper d-none d-lg-block">
+            <div class="map__image-container">
+                <img src="/o/redsys-theme/images/components/map/map.png" alt="Mapa mundial" class="map__image">
+            
+                <ul class="map__dots">
+                    <li class="map__dot" style="top: 45.8%; left: 44.8%;"
+                        data-title="En Portugal"
+                        data-description="Servicios de adquiriencia y procesamiento crossborder."
+                        data-flag="/o/redsys-theme/images/components/map/portugal.png">
+                    </li>
+                    <li class="map__dot" style="top: 73.8%; left: 28%;"
+                        data-title="En Argentina"
+                        data-description="Servicios de adquiriencia y procesamiento crossborder."
+                        data-flag="/o/redsys-theme/images/components/map/argentina.png">
+                    </li>
+                </ul>
+                <div class="map__popup" id="map-popup" role="tooltip">
+                    <div class="map__popup-header">
+                        <img class="map__popup-flag" id="popup-flag" src="" alt="Bandera">
+                        <h2 class="map__popup-title" id="map-popup__title"></h2>
+                    </div>
+                    <p class="map__popup-description" id="map-popup__description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="map__wrapper--mobile d-block d-lg-none">
+        <div class="map__image-container">
+            <img src="/o/redsys-theme/images/components/map/map-mob.png" alt="Mapa móvil" class="map__image">
+        </div>
+        <div class="map-accordion">
+            <div class="accordion" id="accordionMap">
+<!--
+                <div class="map-accordion__card">
+                    <div class="map-accordion__card-header" id="headingContinent1">
+                        <button class="map-accordion_button" type="button" data-toggle="collapse"
+                            data-target="#collapseContinent1" aria-expanded="false" aria-controls="collapseContinent1">
+                            Europa <span class="toggle-icon"></span>
+                        </button>
+                    </div>
+                    <div id="collapseContinent1" class="collapse" aria-labelledby="headingContinent1" data-parent="#accordionMap">
+                        <div class="map-accordion__card-body">
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry1">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry1" aria-expanded="false" aria-controls="collapseCountry1">
+                                        <img src="/o/redsys-theme/images/components/map/portugal.png" alt="Portugal" class="flag">
+                                        <h3>Portugal</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry3" class="collapse" aria-labelledby="headingCountry3" data-parent="#accordionContinent2">
+                                    <p>Servicios de adquiriencia y procesamiento crossborder.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseContinent1" class="collapse" aria-labelledby="headingContinent1" data-parent="#accordionMap">
+                        <div class="map-accordion__card-body">
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry2">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry2" aria-expanded="false" aria-controls="collapseCountry2">
+                                        <img src="/o/redsys-theme/images/components/map/alemania.png" alt="Argentina" class="flag">
+                                        <h3>Alemania</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry3" class="collapse" aria-labelledby="headingCountry3" data-parent="#accordionContinent2">
+                                    <p>Servicios de adquiriencia y procesamiento crossborder.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+                <div class="map-accordion__card">
+                    <div class="map-accordion__card-header" id="headingContinent1">
+                        <button class="map-accordion_button" type="button" data-toggle="collapse" data-target="#collapseContinent1"
+                            aria-expanded="false" aria-controls="collapseContinent1">
+                            Europa <span class="toggle-icon"></span>
+                        </button>
+                    </div>
+                    <div id="collapseContinent1" class="collapse" aria-labelledby="headingContinent1" data-parent="#accordionMap">
+                        <div class="map-accordion__card-body">
+
+                            <!-- País: Portugal -->
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry1">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry1" aria-expanded="false" aria-controls="collapseCountry1">
+                                        <img src="/o/redsys-theme/images/components/map/portugal.png" alt="Portugal" class="flag">
+                                        <h3>Portugal</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry1" class="collapse" aria-labelledby="headingCountry1"
+                                    data-parent="#collapseContinent1">
+                                    <p>Servicios de adquiriencia y procesamiento crossborder.</p>
+                                </div>
+                            </div>
+
+                            <!-- País: Alemania -->
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry2">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry2" aria-expanded="false" aria-controls="collapseCountry2">
+                                        <img src="/o/redsys-theme/images/components/map/alemania.png" alt="Alemania" class="flag">
+                                        <h3>Alemania</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry2" class="collapse" aria-labelledby="headingCountry2"
+                                    data-parent="#collapseContinent1">
+                                    <p>Servicios de adquiriencia y procesamiento crossborder.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-accordion__card">
+                    <div class="map-accordion__card-header" id="headingContinent2">
+                        <button class="map-accordion_button" type="button" data-toggle="collapse"
+                            data-target="#collapseContinent2" aria-expanded="false" aria-controls="collapseContinent2">
+                            América <span class="toggle-icon"></span>
+                        </button>
+                    </div>
+                    <div id="collapseContinent2" class="collapse" aria-labelledby="headingContinent2" data-parent="#accordionMap">
+                        <div class="map-accordion__card-body">
+                            <div class="map-accordion__country-card">
+                                <div class="map-accordion__card-header" id="headingCountry3">
+                                    <button class="map-accordion__country-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseCountry3" aria-expanded="false" aria-controls="collapseCountry3">
+                                        <img src="/o/redsys-theme/images/components/map/argentina.png" alt="Argentina" class="flag">
+                                        <h3>Argentina</h3>
+                                    </button>
+                                </div>
+                                <div id="collapseCountry3" class="collapse" aria-labelledby="headingCountry3" data-parent="#collapseContinent2">
+                                    <p>Servicios de adquiriencia y procesamiento crossborder.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Definir las funciones antes de llamarlas
+    function initMapDots() {
+        console.log("Ejecutando initMapDots()...");
+
+        const dots = document.querySelectorAll(".map__dot");
+        const popup = document.getElementById("map-popup");
+        const popupFlag = document.getElementById("popup-flag");
+        const popupTitle = document.getElementById("map-popup__title");
+        const popupDescription = document.getElementById("map-popup__description");
+
+        let activeDot = null;
+
+        if (!popup) return; 
+
+        popup.style.display = "none";
+
+        dots.forEach(dot => {
+            dot.removeEventListener("click", dotClickHandler);
+            dot.addEventListener("click", dotClickHandler);
+        });
+
+        function dotClickHandler(event) {
+            event.stopPropagation();
+
+            if (activeDot === this) {
+                resetDots();
+                activeDot = null;
+                popup.classList.remove("visible");
+                popup.style.display = "none";
+                return;
+            }
+
+            resetDots();
+            this.classList.add("selected");
+            activeDot = this;
+
+            dots.forEach(otherDot => {
+                if (otherDot !== this) {
+                    otherDot.classList.add("inactive");
+                }
+            });
+
+            popupFlag.src = this.getAttribute("data-flag");
+            popupFlag.alt = "Bandera de " + this.getAttribute("data-title");
+            popupTitle.textContent = this.getAttribute("data-title");
+            popupDescription.textContent = this.getAttribute("data-description");
+
+            if (!popupTitle.textContent.trim()) return;
+
+            popup.style.display = "block";
+
+            const dotX = this.offsetLeft + this.offsetWidth / 2;
+            const dotY = this.offsetTop;
+
+            const popupHeight = popup.offsetHeight;
+            const popupMargin = 20;
+            popup.style.top = `${dotY - popupHeight - popupMargin}px`;
+            popup.style.left = `${dotX}px`;
+            popup.classList.add("visible");
+        }
+
+        function resetDots() {
+            dots.forEach(dot => {
+                dot.classList.remove("selected", "inactive");
+            });
+        }
+
+        document.removeEventListener("click", closePopupHandler);
+        document.addEventListener("click", closePopupHandler);
+
+        function closePopupHandler(e) {
+            if (!popup.contains(e.target) && !e.target.classList.contains("map__dot")) {
+                popup.classList.remove("visible");
+                popup.style.display = "none";
+                resetDots();
+                activeDot = null;
+            }
+        }
+    }
+
+    function initAccordion() {
+        console.log("Ejecutando initAccordion()...");
+
+        const countryButtons = document.querySelectorAll(".map-accordion__country-button");
+
+        countryButtons.forEach(button => {
+            button.removeEventListener("click", accordionClickHandler);
+            button.addEventListener("click", accordionClickHandler);
+        });
+
+        function accordionClickHandler() {
+            const countryCard = this.closest(".map-accordion__country-card");
+            const collapse = countryCard.querySelector(".collapse");
+
+            const isActive = countryCard.classList.contains("active");
+
+            const continent = countryCard.closest(".map-accordion__card-body");
+            continent.querySelectorAll(".map-accordion__country-card").forEach(card => {
+                card.classList.remove("active");
+                card.querySelector(".collapse").classList.remove("show");
+            });
+
+            if (!isActive) {
+                countryCard.classList.add("active");
+                collapse.classList.add("show");
+            }
+        }
+    }
+
+    // Llamar a las funciones después de definirlas
+    document.addEventListener("DOMContentLoaded", function () {
+        initMapDots();
+        initAccordion();
+    });
+
+    window.addEventListener("pageshow", function () {
+        initMapDots();
+        initAccordion();
+    });
+
+    // Detectar cambios en el DOM 
+    const observer = new MutationObserver(() => {
+        console.log("Cambio detectado en el DOM, reinicializando eventos...");
+        initMapDots();
+        initAccordion();
+    });
+
+    // Observar cambios en todo el documento
+    observer.observe(document.body, { childList: true, subtree: true });
+
+</script>
+
+
+
+<#assign current_country_index = 1>
+	 <div class="map-accordion">
+			<div class="accordion" id="accordionMap">
+			<#if continent_group.getSiblings()?has_content>
+			   <#list continent_group.getSiblings() as current_continent>
+				<div class="map-accordion__card">
+					<div class="map-accordion__card-header" id="headingContinent${current_continent_index}">
+                        <button class="map-accordion_button" type="button" data-toggle="collapse" data-target="#collapseContinent${current_continent_index}" aria-expanded="false" aria-controls="collapseContinent${current_continent_index}">
+                        <#if (current_continent.txt_continent_name.getData())??>
+	                      ${current_continent.txt_continent_name.getData()}
+                        </#if> <span class="toggle-icon"></span>
+                        </button>
+                    </div>
+					<div id="collapseContinent${current_continent_index}" class="collapse" aria-labelledby="headingContinent${current_continent_index}" data-parent="#accordionMap">
+						<div class="map-accordion__card-body">
+							<#if current_continent.country_group.getSiblings()?has_content>
+	                            <#list current_continent.country_group.getSiblings() as current_continent_selected_country>
+									<#if (current_continent_selected_country.txt_country_name.getData())?? 
+									&& current_continent_selected_country.txt_country_name.getData()?has_content 
+									&& current_continent_selected_country.txt_country_name.getData()?trim?has_content> 
+										<#assign countryNameMobile = current_continent_selected_country.txt_country_name.getData()>                                        
+                                    </#if>
+									<#if (current_continent_selected_country.txt_country_desc.getData())?? 
+									&& current_continent_selected_country.txt_country_desc.getData()?has_content 
+									&& current_continent_selected_country.txt_country_desc.getData()?trim?has_content> 
+										<#assign countryDescriptionMobile = current_continent_selected_country.txt_country_desc.getData()>      
+                                    </#if>
+									<#if (current_continent_selected_country.img_country_icon.getData())?? 
+				                    && current_continent_selected_country.img_country_icon.getData()?has_content 
+				                    && current_continent_selected_country.img_country_icon.getData()?trim?has_content>
+	                                    <#assign icon_country_alt_mobile = current_continent_selected_country.img_country_icon.getAttribute("alt")>
+										<#assign icon_country_data_fileentryid_mobile = current_continent_selected_country.img_country_icon.getAttribute("fileEntryId")>
+										<#assign icon_country_src_mobile = current_continent_selected_country.img_country_icon.getData()>
+                                    </#if>
+									<div class="map-accordion__country-card">   
+										<div class="map-accordion__card-header" id="headingCountry${current_country_index}">
+											<button class="map-accordion__country-button" type="button" data-toggle="collapse" data-target="#collapseCountry${current_country_index}" aria-expanded="false" aria-controls="collapseCountry${current_country_index}">
+                                                <img src="${icon_country_src_mobile}" alt="{icon_country_alt_mobile}" class="flag">
+                                                <h3>${countryNameMobile}</h3>
+                                            </button>
+										</div>
+										<div id="collapseCountry${current_country_index}" class="collapse" aria-labelledby="headingCountry${current_country_index}" data-parent="#collapseContinent${current_continent_index}">
+											<p>${countryDescriptionMobile}</p>
+										</div>
+									</div>
+                                    <#assign current_country_index += 1>
+								</#list>
+							</#if>
+                        </div>
+					</div>
+                </div>	
+                </#list>							
+            </#if>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,164 @@
+.service-status {
+    margin-left: 48px;
+    position: relative;
+    top: -1px;
+    z-index: 1000;
+
+    @media (max-width: $breakpoint-max-lg) {
+        display: none;
+    }
+
+    &__container {
+        position: absolute;
+
+        &:hover .service-status__box {
+            min-height: 128px;   
+            opacity: 1;
+            margin-bottom: 0;    
+            display: block;              
+        }
+    }
+
+    &__box {
+        background-color: var(--gray-100);
+        border-radius:  0 0 1.5rem 1.5rem;
+        padding: 1.25rem 1.25rem 0.75rem;
+        width: 400px;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.6s ease, opacity 0.6s ease, margin-bottom 0.3s ease;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &__status-ball {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+
+        &.success { background-color: #00c853; }
+        &.warning { background-color: #ffc107; }
+    }
+
+    &__title {
+        p {
+            @include body2-regular;
+            text-align: left;
+            color: var(--text-color-default);
+            margin-bottom: 0;
+            padding-left: 4px;
+
+            strong {
+                @include body2-semibold;
+            }
+        }
+    }
+
+    &__description {
+        p {
+            @include inter-regular-12;
+            text-align: left;
+            margin-bottom: 0.75rem;
+            color: var(--text-color-default);
+            margin-left: 24px;
+        }
+    }
+
+    &__error {
+        position: relative;
+        border-top: 1px solid var(--gray-200);
+        padding: 0.75rem 0;
+
+        p {
+            @include inter-regular-12;
+            align-items: flex-start;
+            text-align: left;
+            color: var(--text-color-default);
+            margin-bottom: 0.5rem;
+            margin-left: 1.5rem;
+        }
+
+        ul {
+            margin-bottom: 0.5rem;
+
+            li {
+                @include inter-regular-12;
+                color: var(--text-color-default);
+                text-align: left;
+            }
+        }
+    }
+
+    &__error-icon {
+        position: absolute;
+        width: 0.75rem;
+        height: 0.75rem;
+        background: url('../images/icons/Mono/Error.svg') no-repeat center/contain;
+        flex-shrink: 0;
+    }
+
+    &__error-icon--inline {
+        width: 0.75rem;
+        height: 0.75rem;
+        background: url('../images/icons/Color/Error-orange.svg') no-repeat center/contain;
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+    }
+
+    &__date-time {
+        @include inter-regular-12;
+        color: var(--text-color-default);
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.25rem;
+        justify-content: flex-start;
+        margin-left: 24px;
+
+        .service-status__date,
+        .service-status__time {
+            display: inline-block;
+        }
+
+        .service-status__time {
+            padding-left: 0.5rem;
+            border-left: 1px solid var(--gray-200);
+        }
+    }
+
+    &__button {
+        width: 324px;
+        height: 32px;
+        @include inter-regular-14;
+        background-color: var(--gray-700);
+        color: var(--white);
+        border: none;
+        border-radius: 0 0 1rem 1rem;
+        padding: 0.625rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        cursor: pointer;
+        justify-content: space-between;
+        clip-path: polygon(0% 0%, 100% 0%, 98% 100%, 2% 100%);
+        margin-left: 32px;
+
+        .service-status__status-ball {
+            flex-shrink: 0;
+        }
+    }
+
+    &__arrow-icon {
+        width: 1rem;
+        height: 1rem;
+        background: url('../images/icons/Mono/Down_Arrow.svg') no-repeat center/contain;
+        margin-left: auto;
+        filter: invert(25%) brightness(345%);
+    }
+}

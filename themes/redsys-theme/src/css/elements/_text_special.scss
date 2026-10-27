@@ -1,0 +1,102 @@
+.text {
+   &-specialh3 {
+      h2 {
+         padding: 24px 0;
+         margin: 0 auto;
+         margin-bottom: 72px;
+         @include h3-medium;
+         color: var(--text-color-default);
+
+         span {
+            @include h3-medium;
+            color: var(--brand-color-1);
+         }
+      }
+   }
+
+   @media (max-width: 1025px) {
+      &-specialh3 {
+         h2 {
+            @include h4-medium;
+            margin: 0 0 32px;
+
+            span {
+               @include h4-medium;
+            }
+         }
+      }
+   }
+
+   @media (max-width: 574.99px) {
+      &-specialh3 {
+         h2 {
+            margin-bottom: 0;
+            padding: 0 0 2rem 0;
+            @include h5-medium;
+
+            span {
+               @include h5-medium;
+            }
+         }
+      }
+   }
+}
+
+strong {
+   font-weight: 600;
+}
+
+.style-underline {
+   text-decoration: underline;
+}
+
+.h3-style {
+   h2,h3 {
+      @include h3-medium;
+      color: var(--text-color-default);
+      vertical-align: middle;
+
+      text-align: left;
+      margin-bottom: 32px !important;
+
+      @media (max-width: 1025px) {
+         @include h4-medium;
+         margin-left: 0;
+      }
+   }
+}
+
+.h4-style {
+   h2,h3 {
+      @include h4-semibold;
+      color: var(--text-color-default);
+      vertical-align: middle;
+      text-align: left;
+      margin-bottom: 16px !important;
+      padding-left: 48px;
+
+      @media (max-width: 574.99px) {
+         padding-left: 16px;
+         padding-right: 16px;
+      }
+   }
+}
+
+.p-style {
+   @include body1-regular;
+   color: var(--text-color-default);
+   vertical-align: middle;
+   margin-left: 48px;
+   margin-right: 48px;
+   text-align: left;
+   margin-bottom: 32px !important;
+
+   @media (max-width: 1025px) {
+      @include body2-regular;
+   }
+
+   @media (max-width: 575.99px) {
+      margin-left: 16px;
+      margin-right: 16px;
+   }
+}

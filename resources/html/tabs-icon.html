@@ -1,0 +1,79 @@
+<section class="tabs-icon tabs-icon-v2">
+    <div class="tabs-icon__container">
+        <div class="tabs-icon__header">
+            <h2 class="tabs-icon__header-title">
+                
+            </h2>
+            <div class="tabs-icon__text-columns">
+                <h3 class="tabs-icon__header-subtitle">
+
+                </h3>
+                <p class="tabs-icon__header-description">
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Desktop -->
+        <div class="tabs-icon__group">
+            <ul class="tabs-icon__group-list" id="tabsList" role="tablist">
+                <li class="tabs-icon__group-item" role="presentation"> <!-- Los ids / data / aria-controls hay que gestionarlos dinamicamente, es un ejemplo de nombre - Solo hay que respetar que coincidan -->
+                    <button class="tabs-icon__icon-link" type="button" data-toggle="collapse" data-target="#collapseTab1" aria-expanded="true" aria-controls="collapseTab1">
+                        <img src="/o/redsys-theme/images/icons/Color/" alt="Ícono" class="tabs-icon__icon"> <!-- Imagen del icono Color-->
+                        <h4 class="tabs-icon__icon-title"><!-- Nombre del icono --></h4>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tabs-icon__tab-content" id="tabContent"> <!-- Los ids hay que gestionarlos dinamicamente, es un ejemplo de nombre - Solo hay que respetar que coincidan -->
+                <div class="tabs-icon__tabs-panel collapse fade" id="collapseTab1" role="tabpanel" data-parent="#tabContent">
+                    <div class="row">
+                        <div class="col-7 tabs-icon__column-left">
+                            <h4 class="tabs-icon__tab-title"><!-- Nombre del icono --></h4>
+                            <p class="tabs-icon__tab-description">
+                                <!-- Descripción del tab -->
+                            </p>
+                        </div>
+                        <div class="col-5 tabs-icon__column-right"> <!-- Imagen del Tab -->
+                            <img src="/o/redsys-theme/images/components/tabs-icon/" alt="Imagen del tab" class="tabs-icon__tab-image" style="background-color: ">  <!-- Background contribuible -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Móvil -->
+        <div class="tabs-icon-accordion" id="accordionIconTabs">
+            <div class="tabs-icon__card">
+                <!-- Los ids hay que gestionarlos dinamicamente, es un ejemplo de nombre - Hay que respetar que coincida -->
+                <div class="tabs-icon__card-header" id="headingOne">
+                    <button class="tabs-icon__button" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <img src="/o/redsys-theme/images/icons/Color/" alt="Ícono del Botón" class="tabs-icon__icon"> <!-- Imagen del icono Color-->
+                        <h4 class="tabs-icon__icon-title"><!-- Nombre del icono --></h4>
+                        <span class="toggle-icon"></span>
+                    </button>
+                </div>
+                <div id="collapseOne" class="collapse tabs-icon__collapse" aria-labelledby="headingOne" data-parent="#accordionIconTabs">
+                    <div class="tabs-icon__card-body">
+                        <p class="tabs-icon__tab-description">
+                            <!-- Descripción del tab -->
+                        </p>
+                        <img src="/o/redsys-theme/images/components/tabs-icon/" alt="Imagen del tab" class="tabs-icon__tab-image">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.tabs-icon__tabs-panel').forEach(collapse => {
+            collapse.addEventListener('show.bs.collapse', () => collapse.style.transitionDuration = '0.1s');
+            collapse.addEventListener('hide.bs.collapse', () => collapse.style.transitionDuration = '0.1s');
+        });
+    });
+</script>
+    

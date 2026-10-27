@@ -1,0 +1,1620 @@
+$light-border-color: #000 ;
+$light-color: #000;
+
+body.light-background,
+body.light-background *:not(svg):not(i):not(.icon):not(img):not(.lfr-layout-structure-item-d5b7aad0-7b58-ebff-6abc-7fecf66a1686):not(.lfr-layout-structure-item-62feb1f4-d9fe-afaf-cbfa-4337458444c6):not(.two-columns__image):not(.two-columns__optional-background):not(.partners__color):not(.tabs-icon__button-background) {
+    -webkit-box-shadow: none !important;
+    background: #fff !important;
+}
+
+body.light-background {
+    a,
+    abbr,
+    acronym,
+    address,
+    article,
+    aside,
+    b,
+    basefont,
+    bdi,
+    big,
+    blink,
+    blockquote,
+    body,
+    button,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    col,
+    colgroup,
+    command,
+    dd,
+    del,
+    details,
+    dfn,
+    dir,
+    div:not(.two-columns__image):not(.two-columns__optional-background):not(.lfr-layout-structure-item-d5b7aad0-7b58-ebff-6abc-7fecf66a1686):not(.lfr-layout-structure-item-62feb1f4-d9fe-afaf-cbfa-4337458444c6)
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    font,
+    footer,
+    form,
+    h1,
+    h1 a,
+    h1 a b,
+    h1 abbr,
+    h1 b,
+    h1 center,
+    h1 em,
+    h1 i,
+    h1 span,
+    h1 strong,
+    h2,
+    h2 a,
+    h2 a b,
+    h2 abbr,
+    h2 b,
+    h2 center,
+    h2 em,
+    h2 i,
+    h2 span,
+    h2 strong,
+    h3,
+    h3 a,
+    h3 a b,
+    h3 abbr,
+    h3 b,
+    h3 center,
+    h3 em,
+    h3 i,
+    h3 span,
+    h3 strong,
+    h4,
+    h4 a,
+    h4 a b,
+    h4 abbr,
+    h4 b,
+    h4 center,
+    h4 em,
+    h4 i,
+    h4 span,
+    h4 strong,
+    h5,
+    h5 a,
+    h5 a b,
+    h5 abbr,
+    h5 b,
+    h5 center,
+    h5 em,
+    h5 i,
+    h5 span,
+    h5 strong,
+    h6,
+    h6 a,
+    h6 a b,
+    h6 abbr,
+    h6 b,
+    h6 center,
+    h6 em,
+    // h6 i,
+    h6 span,
+    h6 strong,
+    header,
+    hgroup,
+    html,
+    //i,
+    iframe,
+    img,
+    input,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    listing,
+    main,
+    mark,
+    marquee,
+    menu,
+    meter,
+    multicol,
+    nav,
+    nobr,
+    object,
+    ol,
+    option,
+    output,
+    p,
+    plaintext,
+    pre,
+    progress,
+    q,
+    rb,
+    rp,
+    rt,
+    ruby,
+    s,
+    samp,
+    section,
+    select,
+    small,
+    span:not(.partners__color):not(.tabs-icon__button-background):not(.toggle-icon),
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    //svg,
+    table,
+    tbody,
+    td,
+    text,
+    textarea,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video,
+    xmp {
+        -moz-appearance: none !important;
+        -moz-user-select: text !important;
+        -webkit-user-select: text !important;
+        background-image: none !important;
+        text-shadow: none !important;
+        user-select: text !important
+    }
+
+    a,
+    abbr,
+    acronym,
+    address,
+    article,
+    aside,
+    b,
+    basefont,
+    bdi,
+    big,
+    blink,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    col,
+    colgroup,
+    command,
+    dd,
+    del,
+    details,
+    dfn,
+    dir,
+    div:not(.two-columns__image):not(.two-columns__optional-background):not(.lfr-layout-structure-item-d5b7aad0-7b58-ebff-6abc-7fecf66a1686):not(.lfr-layout-structure-item-62feb1f4-d9fe-afaf-cbfa-4337458444c6),
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    font,
+    footer,
+    form,
+    h1,
+    h1 a,
+    h1 a b,
+    h1 abbr,
+    h1 b,
+    h1 center,
+    h1 em,
+    h1 i,
+    h1 span,
+    h1 strong,
+    h2,
+    h2 a,
+    h2 a b,
+    h2 abbr,
+    h2 b,
+    h2 center,
+    h2 em,
+    h2 i,
+    h2 span,
+    h2 strong,
+    h3,
+    h3 a,
+    h3 a b,
+    h3 abbr,
+    h3 b,
+    h3 center,
+    h3 em,
+    h3 i,
+    h3 span,
+    h3 strong,
+    h4,
+    h4 a,
+    h4 a b,
+    h4 abbr,
+    h4 b,
+    h4 center,
+    h4 em,
+    h4 i,
+    h4 span,
+    h4 strong,
+    h5,
+    h5 a,
+    h5 a b,
+    h5 abbr,
+    h5 b,
+    h5 center,
+    h5 em,
+    h5 i,
+    h5 span,
+    h5 strong,
+    h6,
+    h6 a,
+    h6 a b,
+    h6 abbr,
+    h6 b,
+    h6 center,
+    h6 em,
+    // h6 i,
+    h6 span,
+    h6 strong,
+    header,
+    hgroup,
+    html,
+    // i,
+    iframe,
+    input,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    listing,
+    main,
+    mark,
+    marquee,
+    menu,
+    meter,
+    multicol,
+    //nav:not(#pojo-a11y-toolbar),
+    nobr,
+    object,
+    ol,
+    option,
+    output,
+    p,
+    plaintext,
+    pre,
+    progress,
+    q,
+    rb,
+    rp,
+    rt,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span:not(.partners__color):not(.tabs-icon__button-background):not(.toggle-icon),
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    //svg,
+    table,
+    tbody,
+    td,
+    text,
+    textarea,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video,
+    xmp {
+        background: #fff !important;
+        background-color: #fff !important;
+    }
+    
+    a,
+    article,
+    aside,
+    basefont,
+    bdi,
+    big,
+    blink,
+    blockquote,
+    body,
+    button,
+    canvas,
+    caption,
+    center,
+    code,
+    col,
+    colgroup,
+    command,
+    dd,
+    del,
+    details,
+    dir,
+    div,
+    dl,
+    dt,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    font,
+    footer,
+    form,
+    header,
+    hgroup,
+    html,
+    iframe,
+    img,
+    input,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    listing,
+    main,
+    mark,
+    marquee,
+    menu,
+    meter,
+    multicol,
+    nav,
+    nobr,
+    object,
+    ol,
+    option,
+    output,
+    p,
+    plaintext,
+    pre,
+    progress,
+    q,
+    rb,
+    rp,
+    rt,
+    ruby,
+    s,
+    samp,
+    section,
+    select,
+    small,
+    span:not(.partners__color):not(.tabs-icon__button-background):not(.toggle-icon),
+    strike,
+    sub,
+    summary,
+    sup,
+    svg,
+    table,
+    tbody,
+    td,
+    text,
+    textarea,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    ul,
+    var,
+    video,
+    xmp {
+        color: $light-color !important
+    }
+
+    abbr,
+    acronym,
+    b,
+    b span,
+    h1 b,
+    h1 strong,
+    h2 b,
+    h2 strong,
+    h3 b,
+    h3 strong,
+    h4 b,
+    h4 strong,
+    h5 b,
+    h5 strong,
+    h6 b,
+    h6 strong,
+    strong,
+    strong span {
+        color: $light-color !important
+    }
+
+    address,
+    address span,
+    cite,
+    cite span,
+    dfn,
+    dfn span,
+    em,
+    em span,
+    h1 em,
+    h1 i,
+    h2 em,
+    h2 i,
+    h3 em,
+    h3 i,
+    h4 em,
+    h4 i,
+    h5 em,
+    h5 i,
+    h6 em,
+    h6 i,
+    // i,
+    i span,
+    u,
+    u span {
+        color: $light-color !important
+    }
+
+    dt {
+        border-top: thin solid grey !important
+    }
+
+    h1,
+    h1 a,
+    h1 a b,
+    h1 abbr,
+    h1 center,
+    h1 span,
+    h2,
+    h2 a,
+    h2 a b,
+    h2 abbr,
+    h2 center,
+    h2 span,
+    h3,
+    h3 a,
+    h3 a b,
+    h3 abbr,
+    h3 center,
+    h3 span,
+    h4,
+    h4 a,
+    h4 a b,
+    h4 abbr,
+    h4 center,
+    h4 span,
+    h5,
+    h5 a,
+    h5 a b,
+    h5 abbr,
+    h5 center,
+    h5 span,
+    h6,
+    h6 a,
+    h6 a b,
+    h6 abbr,
+    h6 center,
+    h6 span {
+        color: $light-color !important
+    }
+    :focus {
+        outline: thin dotted !important
+    }
+
+    li::marker {
+        color: $light-color;
+    }
+
+    li::before {
+        color: $light-color;
+    }
+
+    a.button,
+    a.button abbr,
+    a.button acronym,
+    a.button b,
+    a.button basefont,
+    a.button big,
+    a.button br,
+    a.button code,
+    a.button div,
+    a.button em,
+    a.button font,
+    a.button h1,
+    a.button h2,
+    a.button h3,
+    a.button h4,
+    a.button h5,
+    a.button h6,
+    a.button i,
+    a.button kbd,
+    a.button rb,
+    a.button rp,
+    a.button rt,
+    a.button ruby,
+    a.button samp,
+    a.button small,
+    a.button span,
+    a.button strong,
+    a.button tt,
+    a.button u,
+    a.button var,
+    a:link,
+    a:link abbr,
+    a:link acronym,
+    a:link b,
+    a:link basefont,
+    a:link big,
+    a:link br,
+    a:link code,
+    a:link div,
+    a:link em,
+    a:link font,
+    a:link h1,
+    a:link h2,
+    a:link h3,
+    a:link h4,
+    a:link h5,
+    a:link h6,
+    // a:link i,
+    a:link kbd,
+    a:link rb,
+    a:link rp,
+    a:link rt,
+    a:link ruby,
+    a:link samp,
+    a:link small,
+    a:link span,
+    a:link strong,
+    a:link tt,
+    a:link u,
+    a:link var,
+    a.nav-link {
+        color: $light-color !important
+    }
+
+    a {
+        color: $light-color !important;
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    table,
+    td,
+    th,
+    tr,
+    tt {
+        background-color: $light-color !important;
+        color: $light-color !important;
+        border: 2px solid $light-border-color !important;
+    }
+
+    a:visited,
+    a:visited abbr,
+    a:visited acronym,
+    a:visited b,
+    a:visited basefont,
+    a:visited big,
+    a:visited br,
+    a:visited code,
+    a:visited div,
+    a:visited em,
+    a:visited font,
+    a:visited h1,
+    a:visited h2,
+    a:visited h3,
+    a:visited h4,
+    a:visited h5,
+    a:visited h6,
+    // a:visited i,
+    a:visited kbd,
+    a:visited rb,
+    a:visited rp,
+    a:visited rt,
+    a:visited ruby,
+    a:visited samp,
+    a:visited small,
+    a:visited span,
+    a:visited strong,
+    a:visited tt,
+    a:visited u,
+    a:visited var,
+    a.nav-link {
+        color: $light-color !important
+    }
+
+    ::placeholder {
+        color: $light-color !important;
+    }
+
+    h1,
+    h1 a,
+    h1 a b,
+    h1 abbr,
+    h1 center,
+    h1 span,
+    h2,
+    h2 a,
+    h2 a b,
+    h2 abbr,
+    h2 center,
+    h2 span,
+    h3,
+    h3 a,
+    h3 a b,
+    h3 abbr,
+    h3 center,
+    h3 span,
+    h4,
+    h4 a,
+    h4 a b,
+    h4 abbr,
+    h4 center,
+    h4 span,
+    h5,
+    h5 a,
+    h5 a b,
+    h5 abbr,
+    h5 center,
+    h5 span,
+    h6,
+    h6 a,
+    h6 a b,
+    h6 abbr,
+    h6 center,
+    h6 span,
+    abbr,
+    acronym,
+    b,
+    b span,
+    h1 b,
+    h1 strong,
+    h2 b,
+    h2 strong,
+    h3 b,
+    h3 strong,
+    h4 b,
+    h4 strong,
+    h5 b,
+    h5 strong,
+    h6 b,
+    h6 strong,
+    strong,
+    strong span {
+        color: $light-color !important
+    }
+
+    a,
+    article,
+    aside,
+    basefont,
+    bdi,
+    big,
+    blink,
+    blockquote,
+    body,
+    button,
+    canvas,
+    caption,
+    center,
+    code,
+    col,
+    colgroup,
+    command,
+    dd,
+    del,
+    details,
+    dir,
+    div,
+    dl,
+    dt,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    font,
+    footer,
+    form,
+    header,
+    hgroup,
+    html,
+    iframe,
+    img,
+    input,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    listing,
+    main,
+    mark,
+    marquee,
+    menu,
+    meter,
+    multicol,
+    nav,
+    nobr,
+    object,
+    ol,
+    option,
+    output,
+    p,
+    plaintext,
+    pre,
+    progress,
+    q,
+    rb,
+    rp,
+    rt,
+    ruby,
+    s,
+    samp,
+    section,
+    select,
+    small,
+    span:not(.partners__color):not(.tabs-icon__button-background):not(.toggle-icon),
+    strike,
+    sub,
+    summary,
+    sup,
+    svg,
+    table,
+    tbody,
+    td,
+    text,
+    textarea,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    ul,
+    var,
+    video,
+    xmp,
+    .lead,
+    .word {
+        color: $light-color !important
+    }
+
+    li::before {
+        color: $light-color;
+    }
+
+    img {
+        // background: #808080 !important;
+        // background-color: #808080 !impor
+    }
+
+    abbr,
+    acronym {
+        border-bottom: 1px dotted !important
+    }
+
+    :focus {
+        outline: thin dotted !important
+    }
+
+    a.button,
+    a.button abbr,
+    a.button acronym,
+    a.button b,
+    a.button basefont,
+    a.button big,
+    a.button br,
+    a.button code,
+    a.button div,
+    a.button em,
+    a.button font,
+    a.button h1,
+    a.button h2,
+    a.button h3,
+    a.button h4,
+    a.button h5,
+    a.button h6,
+    a.button i,
+    a.button kbd,
+    a.button rb,
+    a.button rp,
+    a.button rt,
+    a.button ruby,
+    a.button samp,
+    a.button small,
+    a.button span,
+    a.button strong,
+    a.button tt,
+    a.button u,
+    a.button var,
+    a:link,
+    a:link abbr,
+    a:link acronym,
+    a:link b,
+    a:link basefont,
+    a:link big,
+    a:link br,
+    a:link code,
+    a:link div,
+    a:link em,
+    a:link font,
+    a:link h1,
+    a:link h2,
+    a:link h3,
+    a:link h4,
+    a:link h5,
+    a:link h6,
+    // a:link i,
+    a:link kbd,
+    a:link rb,
+    a:link rp,
+    a:link rt,
+    a:link ruby,
+    a:link samp,
+    a:link small,
+    a:link span,
+    a:link strong,
+    a:link tt,
+    a:link u,
+    a:link var,
+    a.nav-link {
+        color: $light-color !important
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    table,
+    td,
+    th,
+    tr,
+    tt {
+        border: 1px solid $light-color !important
+    }
+
+    ul li::marker {
+        color: $light-color !important;
+    }
+
+    :focus {
+        outline: none !important;
+    }
+
+    /* Componentes */
+    header {
+        border-bottom: 1px solid $light-border-color;
+
+        .container-menu ul li ul,
+        .container-menu ul li.open>a {
+            border-bottom: 1px solid $light-border-color;
+        }
+
+        .container-menu ul li.active-parent, 
+        .container-menu ul li.selected,
+        .container-menu ul li a:hover,
+        .container-menu ul li a:focus-visible {
+            text-decoration-color: $light-color;
+        }
+
+        .container-menu ul li.active-parent a.nav-link::after, 
+        .container-menu ul li.selected a.nav-link::after {
+            background-color: $light-color !important;
+        }
+    }
+
+    footer {
+        .footer-container {
+            border: 1px solid $light-border-color;
+            border-bottom: 0;
+        }
+
+        .social_media_link {
+            a {
+                border-radius: 32px;
+                border: 2px solid $light-border-color;
+            }
+
+            img {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        .button-up__link {
+            border: 2px solid $light-border-color;
+            border-bottom: 0;
+
+            &::after {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        .link__logo-go-up {
+            filter: brightness(0) saturate(100%);
+        }
+
+        .row-upper__footer-adress .footer-adress__enlace::after {
+            filter: brightness(0) saturate(100%);
+        }
+
+        .section-footer-logo {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    /* Accesibilidad */
+    .accessibility {
+        &-menu {
+            border: 2px solid $light-border-color;
+
+            i {
+                filter: brightness(0) saturate(100%);
+            }
+
+            a:hover i {
+                filter: brightness(0) saturate(100%);
+                background-color: transparent !important;
+            }
+        }
+
+        &-icon {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &-button {
+            border: 2px solid $light-border-color;
+        }
+
+        &-widget {
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    .component-social {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        &__button {
+            border: 2px solid $light-color;
+        }
+
+        img {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    /* Componentes */
+    .cookie-modal {
+        &__content {
+            border: 2px solid $light-border-color;
+        }
+    }
+
+    .home-modal {
+        &__content {
+            border: 2px solid $light-border-color;
+        }
+    }
+
+    .inclusive-modal {
+        &__content {
+            border: 2px solid $light-border-color;
+        }
+    }
+
+    .service-status {
+        &__button {
+            border: 2px solid $light-border-color ;
+        }
+
+        &__box {
+            border: 2px solid $light-border-color ;
+        }
+    }
+
+    .cmp-image-mosaic {
+        .image-mosaic__item {
+            border: 1px solid $light-border-color ;
+        }
+
+        .image-mosaic__arrow {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    .two-columns {
+        &__card {
+            border: 2px solid $light-border-color;
+        }
+
+        &__optional-background {
+            background-color: $light-color;
+        }
+
+        &__container-v2 {
+            .two-columns {
+                &__card {
+                    border: 0;
+                }
+
+                &__optional-card {
+                    border: 2px solid $light-border-color;
+
+                    p {
+                        color: $light-color !important;
+                    }
+                }
+            }
+        }
+
+        &__content-description li::marker {
+            color: $light-color;
+        }
+
+    }
+
+    .distributor-icon {
+        &__item a {
+            border: 2px solid $light-border-color;
+        }
+
+        &__column--center::before {
+            content: none;
+        }
+
+        &__column:hover .distributor-icon__image,
+        &__column:focus-within .distributor-icon__image {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &__image {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &__column--center {
+            .left-icon,
+            .rigth-icon {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        .left-icon,
+        .rigth-icon {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    .animate-assets {
+        &__card {
+            border: 5px solid $light-border-color !important;
+        }
+    }
+
+    .news-section {
+        .news__container {
+            border: 2px solid $light-border-color;
+            padding: 24px;
+        }
+    }
+
+    .success-cases {
+        .success-card {
+            border: 5px solid $light-border-color;
+            border-radius: 32px;
+
+            &:hover {
+                border: 5px solid $light-border-color;
+
+                .success-card__text {
+                    border: none;
+                }
+
+                .union-icon {
+                    filter: none;
+                }
+            }
+
+            &-link {
+                border-radius: 32px;
+                text-decoration: none !important;
+                background: none !important;
+
+                &:hover {
+                    border-radius: 32px;
+                }
+            }
+
+            &__footer {
+                border-top: 5px solid $light-border-color;
+            }
+        }
+
+        .slick-prev::before,
+        .slick-next::before {
+            filter: brightness(0) saturate(100%);
+            
+            &:focus,
+            &:hover {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        @media (max-width: $breakpoint-max-lg) {
+            article.success-card {
+                .success-card__text {
+                    border-top: 0;
+                }
+
+                .union-icon {
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    .tabs-icon {
+        &__group-item {
+            &.active {
+                border-color: $light-border-color;
+            }
+
+            &:hover .tabs-icon__icon,
+            &:focus .tabs-icon__icon
+            &__button[aria-expanded=true] .tabs-icon__icon {
+                filter: brightness(0) saturate(100%);
+            }
+
+            &.active .tabs-icon__icon {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        &__group-item:hover,
+        &__group-item:focus {
+            border-color: $light-border-color;
+        }
+
+        &__icon-link {
+            border: none !important;
+            height: 100%;
+        }
+
+        &__card-body {
+            border: 2px solid $light-border-color;
+        }
+
+        &__icon {
+            filter: brightness(0) saturate(100%);
+        }
+        
+        &-v2 {
+            .tabs-icon {
+                &__group-item {
+                    &.active {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .map-accordion {
+        &_button {
+            border: none;
+
+            &::before {
+                filter: brightness(0) saturate(100%);
+            }
+
+            &[aria-expanded=true]::before {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        &__country-button {
+            border: none;
+        }
+
+        &__country-card {
+            border: 2px solid $light-border-color;
+        }
+    }
+
+    .column-tabs {
+        &__icon-button {
+            border: 0 !important;
+            width: 100%;
+            padding: 5px;
+            min-height: 145px;
+
+            &__card-body &__list-icon &__content {
+                border-radius: 32px;
+            }
+
+            &__tab-description li::before {
+                color: $light-color;
+            }
+
+            &:hover {
+                .column-tabs__icon{
+                    filter: $light-color;
+                }
+            }
+        }
+
+        &__button[aria-expanded=true] &__icon {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &__button[aria-expanded=true] .toggle-icon {
+            transform: rotate(180deg);
+            filter: brightness(0) saturate(100%);
+        }
+
+        &active {
+            .column-tabs__icon {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+
+        &__content {
+            border: 2px solid $light-border-color;
+        }
+
+        &__tab-title{
+            color: $light-color !important;
+        }
+
+        &__item {
+            border: 0;
+        }
+
+        &__icon {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &__left-column{
+            border-radius: 32px;
+        }
+
+        &__right-column{
+            border: 2px solid $light-border-color;
+            border-radius: 32px;
+        }
+
+        &__list-icon {
+            margin-top: 0;
+            border-radius: 35px;
+        }
+
+        &__group{
+            border-radius: 35px;
+        }
+
+        &__card {
+            border-radius: 32px;
+        }
+    }
+
+    .card-descargas,
+    .card-descargas--second {
+        &__card {
+            border: 2px solid $light-border-color;
+        }
+
+        &__card-title {
+            p {
+                color: $light-border-color;
+            }
+        }
+    }
+
+    .section-faqs {
+        .container-faqs .faqs-card-header {
+            &.active {
+                img {
+                    filter: brightness(0) saturate(100%);
+                }
+            }
+
+            img {
+                filter: brightness(0) saturate(100%);
+            }
+
+            .arrow-up {
+                filter: brightness(0) saturate(100%);
+                background-image: url(../images/icons/Mono/Down_Arrow.svg) !important;
+                background-color: transparent !important;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .accordion-button {
+            border: none !important;
+        }
+
+        .container-search .serarch-wrapper .input-group-inset-item {
+            .lexicon-icon-search {
+                filter: brightness(0) saturate(100%);
+            }
+
+            .btn {
+                background: transparent !important;
+                height: 100%;
+                border: 0 !important;
+            }
+        }
+    }
+
+    .section-linkedin {
+        .slick-prev::before,
+        .slick-next::before {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    .section-static-components {
+        .content-wrapped {
+            .component-incidents .incidents-content-right {
+                border: 2px solid $light-border-color;
+            }
+
+            .component-incidents .incidents-content-left {
+                border: 2px solid $light-border-color;
+            }
+
+            .section-thanking-etic {
+                border: 2px solid $light-border-color;
+            }
+
+            .contact-card{
+                border-color: $light-border-color;
+                a {
+                    text-decoration: $light-border-color;
+                }
+            }
+
+            .employment-achievements-info{
+                border-color: $light-border-color;
+            }
+
+            .section-thanking-etic {
+                border: 2px solid $light-border-color;
+            }
+        }
+    }
+
+    .rights-files {
+        .element_link-image {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+
+    .tab-panel-support {
+        .nav-tabs .nav-link.active::after {
+            background-color: $light-color;
+        }
+
+        &__card {
+            border: 2px solid $light-border-color;
+        }
+
+        .tab-panel-support .card-body {
+            padding: 0;
+        }
+
+        &__tabs-card {
+            border: 2px solid $light-border-color;
+
+            .card-body {
+            border-radius: 35px;
+        }
+
+        }
+
+        &__video-icon {
+            filter: brightness(0) saturate(100%);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: brightness(0) saturate(100%);
+            border: $light-border-color;
+        }
+    }
+
+    .hero-banner {
+        &-content-text ul li::marker {
+            color: $light-color;
+        }
+
+        &-animation::after {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    /* Elementos */
+    button,
+    .btn-primary,
+    .cta-btn-orange {
+        border: 2px solid $light-border-color;
+
+        &::after {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &:hover::after {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    .cta-btn-white {
+        border: 2px solid $light-border-color !important;
+
+        a {
+            color: $light-color;
+        }
+
+        &::after {
+            filter: brightness(0) saturate(100%);
+        }
+
+        &:hover::after {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+
+    .btn-link:hover,
+    .btn-link:focus,
+    a:hover,
+    a:focus {
+        text-decoration-color: currentColor !important;
+    }
+
+    .nav-tabs .nav-item {
+        margin-bottom: 0;
+    }
+
+    @mixin rich-text-style {
+        &::marker {
+            color: $light-color;
+        }
+    }
+
+
+    @media (max-width: 1199.98px) {
+        header.header {
+            .hamburger-menu {
+                height: 35px;
+                width: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    filter: brightness(0) saturate(100%);
+                }
+            }
+
+            .js-close {
+                height: 35px;
+                width: 35px;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    filter: brightness(0) saturate(100%);
+                }
+            }
+
+            .mobile-language-selector {
+                .dropdown-btn span {
+                    background: transparent !important;
+                }
+
+                .arrow-wrapper {
+                    .dropdown-arrow {
+                        filter: brightness(0) saturate(100%);
+                    }
+                }
+            }
+        }
+    }
+
+    .map__dot {
+        border-radius: 100%;
+        height: 13px;
+        width: 11px;
+    }
+
+    @media (max-width: $breakpoint-max-lg) {
+        .hero-banner {
+            &-header-description .show-more {
+                padding: 0 5px;
+
+                .plus-icon {
+                    filter: brightness(0) saturate(100%);
+
+                    &.desactive {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .show-more {
+                border: none !important;
+            }
+        }
+
+        .two-columns {
+            &__optional-background {
+                display: none;
+            }
+        }
+
+        .tabs-icon {
+            &__icon-title{
+                background: transparent !important;
+                color: $light-color;
+            }
+
+            &__button{
+                border: 0!important;
+            }
+
+            .toggle-icon {
+                background-image: url(../images/icons/Color/Down_Arrow.svg) !important;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                background-color: transparent !important;
+                filter: brightness(0) saturate(100%);
+            }
+
+            &__icon-link.active &__icon {
+                filter: brightness(0) saturate(100%);
+            }
+        
+            &__group-item:hover &__icon,
+            &__group-item:focus &__icon,
+            &__group-item.active &__icon,
+            &__button[aria-expanded="true"] &__icon {
+                filter: brightness(0) saturate(100%);
+            }
+        }
+        
+        .droppanel {
+            &__select-container{
+                span{
+                    background: transparent !important;
+                }
+                .droppanel__icon{
+                    filter: invert(25%) brightness(345%)
+                }
+            }
+        }
+    }
+}

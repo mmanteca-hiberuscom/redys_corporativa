@@ -1,0 +1,184 @@
+<!-- DROPPANEL -->
+<div class="droppanel">
+    <!-- MOBILE: Select para cambiar de pestaña -->
+    <div class="d-block d-md-none mb-3">
+        <div class="droppanel__select-container">
+            <button class="droppanel__select" id="mobile-select">
+                <span id="selected-year">2024</span>
+                <i class="droppanel__icon"></i>
+            </button>
+            
+            <ul class="droppanel__dropdown" id="mobile-dropdown">
+                <li class="droppanel__dropdown-item">2023</li>
+                <li class="droppanel__dropdown-item">2022</li>
+                <li class="droppanel__dropdown-item">2021</li>
+                <li class="droppanel__dropdown-item">2020</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- DESKTOP -->
+    <div class="d-none d-md-block">
+        <ul class="droppanel__list">
+            <li><a class="droppanel__option droppanel__option--selected" data-target="#tab-2024">2024</a></li>
+            <li><a class="droppanel__option" data-target="#tab-2023">2023</a></li>
+            <li><a class="droppanel__option" data-target="#tab-2022">2022</a></li>
+            <li><a class="droppanel__option" data-target="#tab-2021">2021</a></li>
+            <li><a class="droppanel__option" data-target="#tab-2020">2020</a></li>
+        </ul>
+        <hr class="droppanel__divider">
+    </div>
+</div>
+<div id="yearTabsContent">
+
+    <div class="collapse show tab-content" data-bs-parent="#yearTabsContent" id="tab-2024">
+        <div class="card-descargas__container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Cuentas anuales consolidadas</h3>
+                        <a class="cta-btn-white" href="#">Ver documento</a>
+                    </article>
+                </div>
+                <div class="col-md-4 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Cuentas anuales</h3>
+                        <a class="cta-btn-white" href="#">Ver documento</a>
+                    </article>
+                </div>
+                <div class="col-md-4 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Información no financiera</h3>
+                        <a class="cta-btn-white" href="#">Ver documento</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="collapse tab-content" data-bs-parent="#yearTabsContent" id="tab-2023">
+        <div class="card-descargas__container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Memoria anual 2023</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Informe financiero 2023</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="collapse tab-content" data-bs-parent="#yearTabsContent" id="tab-2022">
+        <div class="card-descargas__container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Resumen ejecutivo 2022</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="collapse tab-content" data-bs-parent="#yearTabsContent" id="tab-2021">
+        <div class="card-descargas__container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Informe fiscal 2021</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Política de riesgos 2021</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="collapse tab-content" data-bs-parent="#yearTabsContent" id="tab-2020">
+        <div class="card-descargas__container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Estados financieros 2020</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-4 col-12">
+                    <article class="card-descargas__card">
+                        <h3 class="card-descargas__card-title">Cuentas auditadas 2020</h3>
+                        <a class="cta-btn-white" href="#">Descargar</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const desktopOptions = document.querySelectorAll(".droppanel__option");
+    const mobileSelect = document.getElementById("mobile-select");
+    const mobileDropdown = document.getElementById("mobile-dropdown");
+    const mobileOptions = mobileDropdown.querySelectorAll(".droppanel__dropdown-item");
+    const selectedYear = document.getElementById("selected-year");
+
+    // DESKTOP: Cambio de pestañas
+    desktopOptions.forEach(option => {
+        option.addEventListener("click", function (e) {
+            e.preventDefault();
+            desktopOptions.forEach(opt => opt.classList.remove("droppanel__option--selected"));
+            this.classList.add("droppanel__option--selected");
+
+            // Cambiar la pestaña activa
+            let target = this.getAttribute("data-target");
+            document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("show"));
+            document.querySelector(target).classList.add("show");
+        });
+    });
+
+    // MOBILE: Toggle desplegable
+    mobileSelect.addEventListener("click", function () {
+        mobileDropdown.classList.toggle("show");
+    });
+
+    // MOBILE: Seleccionar un año del dropdown y mover el seleccionado al botón
+    mobileOptions.forEach(option => {
+        option.addEventListener("click", function () {
+            let currentYear = selectedYear.textContent;
+            selectedYear.textContent = this.textContent;
+            this.textContent = currentYear;
+
+            mobileDropdown.classList.remove("show");
+
+            let target = `#tab-${selectedYear.textContent}`;
+            document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("show"));
+            document.querySelector(target).classList.add("show");
+        });
+    });
+
+    // Cerrar el dropdown si se hace clic fuera
+    document.addEventListener("click", function (e) {
+        if (!mobileSelect.contains(e.target) && !mobileDropdown.contains(e.target)) {
+            mobileDropdown.classList.remove("show");
+        }
+    });
+});
+</script>

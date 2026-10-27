@@ -1,0 +1,77 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
+/* endinject */
+
+
+/* Base*/
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/text_hierarchy';
+
+/* Accesibilidad*/
+
+@import 'accesibility/grayscale';
+@import 'accesibility/high-contrast';
+@import 'accesibility/incremenDecremen';
+@import 'accesibility/light-background';
+@import 'accesibility/negative-contrast';
+@import 'accesibility/readable-font';
+@import 'accesibility/stop-animations';
+@import 'accesibility/underline-links';
+@import 'accesibility/menuAccesibility';
+
+/* Elements*/
+@import 'elements/headings';
+@import 'elements/button';
+@import 'elements/links';
+@import 'elements/paragraphs';
+@import 'elements/text_special';
+
+/* Components*/
+@import 'components/liferaytheme';
+@import 'components/header';
+@import 'components/language-selector';
+@import 'components/footer';
+@import 'components/faqs-search';
+@import 'components/image-mosaic';
+@import 'components/two-columns';
+@import 'components/animate-assets';
+@import 'components/iconDistributor';
+@import 'components/basic-slider';
+@import 'components/hero-banner-principal';
+@import 'components/hero-banner';
+@import 'components/map';
+@import 'components/static-components';
+@import 'components/linkedin-slider';
+@import 'components/card-descargas';
+@import 'components/partners';
+@import 'components/tabs-icon';
+@import 'components/cookies-table';
+@import 'components/descarga_formularios';
+@import 'components/droppanel';
+@import 'components/news';
+@import 'components/news-detail';
+@import 'components/column-tabs';
+@import 'components/inclusive-languaje-modal';
+@import 'components/news-category-slider';
+@import 'components/tab-panel-support';
+@import 'components/float-button';
+@import 'components/modal-cookies';
+@import 'components/pago-presencial-static';
+@import 'components/status';
+@import 'components/site-map';
+
+/* Libraries*/
+@import 'libraries/slick.css';
+
+
+
+
+
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */

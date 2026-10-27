@@ -1,0 +1,359 @@
+@import '../elements/dropdown';
+
+.section-faqs {
+    margin-top: 40px;
+
+    .container-search {
+        padding: 0 48px;
+        margin-bottom: 69px;
+        
+        .faqs-img-movil {
+            display: none;
+        }
+
+        h1 {
+            @include h3-semibold;
+            color: var(--text-color-default);
+            margin-top: 48px;
+            margin-bottom: 56px !important;
+            text-align: center;
+        }
+
+        h2 {
+            @include h4-medium;
+            text-align: center;
+            color: var(--text-color-default);
+            text-decoration: underline;
+            text-decoration-color: var(--brand-color-1);
+            text-underline-offset: 10px;
+            margin-bottom: 65px;
+        }
+
+        .faqs-comment {
+            @include body1-regular;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            margin-top: 32px;
+        }
+
+        .cont-right-section {
+            .cont-right {
+                height: clamp(100px, 13.2vw, 312px);
+                border-radius: 32px;
+                background-color: --brand-color-2;
+                margin-top: 3vh;
+            }
+        }
+
+        .cont-left-section {
+            .cont-left {
+                height: clamp(60px, 7.4vw, 162px);
+                border-radius: 32px;
+                background-color: var(--brand-color-1);
+                margin-bottom: 24px;
+            }
+
+            img {
+                height: clamp(100px, 13.2vw, 312px);
+            }
+        }
+
+        .search-wrapper {
+            width: clamp(343px, 80%, 670px);
+            margin: auto;
+
+            .input-group-item {
+                flex-direction: row-reverse;
+            }
+
+            .input-group-inset-item {
+                border-width: 1px;
+                border-top-left-radius: 32px;
+                border-color: #ccc;
+                border-bottom-left-radius: 32px;
+                border-right: 0;
+                padding-left: 24px;
+
+                .lexicon-icon-search {
+                    background-image: url(../images/icons/Mono/Fraud.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 23px;
+                    height: 23px;
+
+                    use {
+                        display: none;
+                    }
+                }
+
+                .btn {
+                    box-shadow: none;
+                    cursor: unset;
+
+                    &:focus,
+                    &.focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            input {
+                border-width: 1px;
+                border-left: none;
+                border-color: #ccc;
+                margin: 0 auto;
+                border-bottom-right-radius: 32px !important;
+                border-top-right-radius: 32px !important;
+                border-right-width: 1px !important;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                max-width: 660px;
+                height: 56px;
+            }
+
+            .form-control {
+                @include body1-regular;
+                color: var(--text-secondary-redsys);
+            }
+        }
+    }
+
+    .container-faqs {
+        padding: 0 46px;
+
+        .row {
+            justify-content: center;
+        }
+
+        .accordion {
+            margin-bottom: 88px;
+        }
+
+        .faqs-subtitle {
+            @include h5-medium;
+            color: var(--text-color-default);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .faqs-card {
+            &-header {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 25px;
+                border-bottom: 1px solid #E2E2E2;
+
+                &.active {
+                    border-bottom: none;
+                }
+
+                h3 {
+                    @include h6-regular;
+                    color: var(--text-color-default);
+                    width: 100%;
+                    text-align: left;
+                }
+
+                .img-color {
+                    display: none;
+                }
+
+                img {
+                    width: 40px;
+                    filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(98%) contrast(89%);
+                }
+
+                button {
+                    width: 100%;
+                    border: none;
+                    padding: 16px 0;
+                    background-color: transparent;
+                    display: flex;
+                    cursor: pointer;
+                    justify-content: space-between;
+                    text-align: left;
+                    color: var(--text-color-default);
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .arrow-up {
+                    content: "";
+                    background-image: url(../images/icons/Mono/Down_Arrow.svg);
+                    min-width: 30px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.active {
+                    img {
+                        filter: none;
+                    }
+
+                    .arrow-up {
+                        background-image: url(../images/icons/Color/Down_Arrow.svg);
+                        transform: rotate(180deg);
+                    }
+
+                    h3 {
+                        @include h6-medium;
+                    }
+                }
+            }
+
+            .accordion-collapse.collapse.show {
+                border-bottom: 1px solid #E2E2E2;
+            }
+        }
+
+        .card-body {
+            @include rich-text-style;
+            margin-top: 0;
+
+            P {
+                a {
+                    @include body1-semibold;
+                    color: var(--text-color-default);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .container-search {
+            padding: 0 32px;
+            margin-bottom: 10px;
+
+            h1 {
+                @include h4-semibold;
+                margin-bottom: 32px !important;
+            }
+
+            h2 {
+                @include h5-medium;
+                margin-bottom: 25px !important;
+                margin-top: 25px;
+            }
+
+            h3 {
+                @include h4-medium;
+                margin-bottom: 25px !important;
+                margin-top: 25px;
+            }
+
+            h4 {
+                @include h5-medium;
+                text-underline-offset: 6px;
+                margin-bottom: 34px;
+            }
+
+            .faqs-comment {
+                @include body2-regular;
+                margin-bottom: 40px;
+                margin-top: 15px;
+            }
+
+            .cont-left-section,
+            .cont-right-section {
+                display: none;
+            }
+
+            .faqs-img-movil {
+                display: block;
+            }
+
+            .serarch-wrapper {
+                .portlet-content {
+                    padding: 0;
+
+                    .panel-body {
+                        padding: 10px 15px 10px 6px;
+                    }
+                }
+            }
+
+        }
+
+        .container-faqs {
+            padding: 0 32px;
+
+            .accordion {
+                margin-bottom: 48px;
+            }
+
+            .faqs-subtitle {
+                @include h6-medium;
+                margin-bottom: 24px;
+            }
+
+            .faqs-card {
+                &-header {
+                    width: 100%;
+                    gap: 0;
+
+                    h3 {
+                        @include body2-regular;
+                        color:var(--text-color-default);
+                        margin-bottom: 0;
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    button {
+                        text-align: left;
+                        gap: 20px;
+                        color: var(--text-color-default);
+                    }
+
+                    &.active {
+                        h3 {
+                            @include body2-semibold;
+                            color:var(--text-color-default);
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-top: 0.5rem;
+
+                p {
+                    @include body2-regular;
+                    color:var(--text-color-default);
+                }
+            }
+        }
+    }
+
+    .lfr-layout-structure-item-row {
+        overflow: visible;
+    }
+
+    .input-group .input-group-inset-item-after {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    @media (max-width: 559px) {
+        .container-search {
+            padding: 0 16px;
+        }
+
+        .container-faqs {
+            padding: 0 16px;
+        }
+    }
+}

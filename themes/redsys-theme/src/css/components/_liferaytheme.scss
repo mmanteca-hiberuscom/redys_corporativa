@@ -1,0 +1,19 @@
+.portlet-decorate .portlet-content {
+  padding: 0 ;
+}
+
+.portlet-layout .portlet-header {
+  margin-bottom: 0 ;
+}
+
+html:not(#__):not(#___) .page-editor__fragment-content--portlet-topper-hidden .portlet>.cadmin.portlet-topper .portlet-options.dropdown-toggle {
+  display: inline-block;
+}
+
+.container{
+  padding: 0 48px;
+
+  @media (max-width: $breakpoint-max-sm) {
+    padding: 0 16px;
+  }
+}

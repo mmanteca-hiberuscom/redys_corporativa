@@ -1,0 +1,567 @@
+// H2/Bold
+@mixin h2-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+    line-height: 4.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H2/SemiBold
+@mixin h2-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h2-font-size);
+    line-height: 4.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H3/Bold
+@mixin h3-bold {
+    font-family: 'InterBold', sans-serif; 
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+    line-height: 3.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H3/SemiBold
+@mixin h3-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h3-font-size);
+    line-height: 3.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H3/Medium
+@mixin h3-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: var(--h3-font-size);
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// H3/Regular
+@mixin h3-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: var(--h3-font-size);
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// H4/Medium
+@mixin h4-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: var(--h4-font-size);
+    line-height: 2.5rem;
+    letter-spacing: 0;
+}
+
+// H4/Bold
+@mixin h4-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: var(--h4-font-size);
+    line-height: 2.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H4/SemiBold
+@mixin h4-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h4-font-size);
+    line-height: 2.5rem;
+    letter-spacing: -0.32px;
+}
+
+// H5/Bold
+@mixin h5-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: var(--h5-font-size);
+    line-height: 2rem;
+    letter-spacing: -0.32px;
+}
+
+// H5/SemiBold
+@mixin h5-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h5-font-size);
+    line-height: 2rem;
+    letter-spacing: -0.32px;
+}
+
+// H5/Medium
+@mixin h5-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: var(--h5-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// H5/Regular
+@mixin h5-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: var(--h5-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+// H6/Regular
+@mixin h6-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: var(--h6-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// H6/Medium
+@mixin h6-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: var(--h6-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+
+// H6/Bold
+@mixin h6-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: var(--h6-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+// H6/SemiBold
+@mixin h6-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h6-font-size);
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+// Body1/Regular
+@mixin body1-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body1/Medium
+@mixin body1-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Body1/SemiBold
+@mixin body1-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body1/Bold
+@mixin body1-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body2/Regular
+@mixin body2-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body2/Medium
+@mixin body2-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body2/SemiBold
+@mixin body2-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Body2/Bold
+@mixin body2-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+
+// Link Header
+@mixin link-header {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter (Regular)
+@mixin inter-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter (Medium)
+@mixin inter-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.3738rem;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+// Inter Header (SemiBold)
+@mixin header-semibold {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+// Header SemiBold 18px
+@mixin header-semibold-18 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Inter (Bold)
+@mixin inter-bold {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3738rem;
+    letter-spacing: 0.32px;
+    text-align: justify;
+}
+
+// Inter (Italic Light)
+@mixin inter-italicLight {
+    font-family: 'InterLightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--h3-font-size);
+    line-height: 3.5rem;
+    letter-spacing: -0.32px;
+    vertical-align: middle;
+}
+
+// Inter (Semi Bold, 40px)
+@mixin inter-semibold-40 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.688rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter (Semi Bold, 12px)
+@mixin inter-semibold-12 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 0.9156rem;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+
+// Inter (Semi Bold, 14px)
+@mixin inter-semibold-14 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.0681rem;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+
+// Inter (Semi Bold, 18px)
+@mixin inter-semibold-18 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.3738rem;
+    letter-spacing: 0;
+}
+
+// Inter (Bold, 20px)
+@mixin inter-semibold-20{
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: var(--h6-font-size);
+    line-height: 2rem;
+    letter-spacing: 0.32px;
+}
+
+// Inter (Bold, 40px)
+@mixin inter-semibold-40 {
+    font-family: 'InterSemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.0525rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter (Italic Light, 32px)
+@mixin inter-italiclight-32 {
+    font-family: 'InterLightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--h4-font-size);
+    line-height: 2.625rem;
+    letter-spacing: -0.32px;
+}
+
+// Animated Words
+@mixin animated-words {
+    font-family: 'InterLightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--font-size-60);
+    line-height: 7rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+@mixin animated-words-h3 {
+    font-family: 'InterLightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--h3-font-size);
+    line-height: 3rem;
+    letter-spacing: 0;
+}
+
+// Subtitle1/Regular
+@mixin subtitle1-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter/Regular-12
+@mixin inter-regular-12 {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 0.68rem;
+    line-height: 0.875rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Inter/Regular-14
+@mixin inter-regular-14 {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+// Subtitle1/Bold
+@mixin subtitle1-body {
+    font-family: 'InterBold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+// Subtitle1/Medium
+@mixin subtitle1-medium {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0;
+}
+
+// Subtitle2/Regular
+@mixin subtitle2-regular {
+    font-family: 'InterRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+// Subtitle2/Medium
+@mixin subtitle2-medium {
+    font-family: 'InterMedium', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+// Estilos texto enriquecido
+@mixin rich-text-style {
+   @include body1-regular;
+   color: var(--text-color-default);
+   text-align: left;
+   margin-top: var(--margin-md);
+
+   p {
+      @include body1-regular;
+      color: var(--text-color-default);
+
+      &:last-child {
+         padding-bottom: 0;
+      }
+      
+      a {
+         @include body1-medium;
+         color: var(--brand-color-1);
+         text-decoration: underline;
+      }
+   }
+
+   ul {
+      @include body1-regular;
+      color: var(--text-color-default);
+      text-align: left;
+      padding-left: 1.2rem;
+
+      li {
+         @include body1-regular;
+         color: var(--text-color-default);
+         padding-bottom: 16px;
+
+         &:last-child {
+               padding-bottom: 0;
+         }
+
+         &::marker {
+               color: var(--brand-color-1);
+         }
+
+         a {
+               color: var(--text-color-default);
+               text-decoration: underline;
+         }
+      }
+   }
+
+   a {
+      @include body1-medium;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: var(--brand-color-1);
+   }
+}
+
+
+// Estilos texto enriquecido Body2
+@mixin rich-text-style-2 {
+   @include body2-regular;
+   color: var(--text-color-default);
+   text-align: left;
+   margin-top: var(--margin-md);
+
+   p {
+      @include body2-regular;
+      color: var(--text-color-default);
+
+      &:last-child {
+         padding-bottom: 0;
+      }
+      
+      a {
+         @include body2-medium;
+         color: var(--brand-color-1);
+         text-decoration: underline;
+      }
+   }
+
+   ul {
+      @include body2-regular;
+      color: var(--text-color-default);
+      text-align: left;
+      padding-left: 1.2rem;
+
+      li {
+         @include body2-regular;
+         color: var(--text-color-default);
+         padding-bottom: 12px;
+
+         &:last-child {
+               padding-bottom: 0;
+         }
+
+         &::marker {
+               color: var(--brand-color-1);
+         }
+
+         a {
+               color: var(--text-color-default);
+               text-decoration: underline;
+         }
+      }
+   }
+
+   a {
+      @include body2-medium;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: var(--brand-color-1);
+   }
+}

@@ -1,0 +1,87 @@
+.corporate-policy {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 48px 24px;
+
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include h3-semibold;
+    }
+
+    &__title-section {
+        @include h5-semibold;
+        margin-bottom: 32px;
+        margin-top: 48px;
+        text-align: left
+    }
+
+    &__paragraph {
+        @include body1-regular;
+    }
+    &__paragraph-section {
+        @include body1-regular;
+        margin-bottom: 24px;
+
+    }
+    &__paragraph-section-1 {
+        @include body1-regular;
+        margin-bottom: 48px;
+    }
+
+    &__bold {
+        @include body1-semibold;
+        display: inline; 
+    }
+    &__bold-1 {
+        @include body1-semibold;
+        display: inline;
+    }
+
+    &__list {
+        padding-left: 0;
+        margin: 24px 0;
+
+        li {
+            @include body1-regular;
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        span {
+            @include body1-semibold;
+            display: inline; 
+        }
+    }
+
+    &__list-decorate {
+        padding-left: 20px;
+        margin: 24px 0;
+        @include body1-regular;
+
+        li {
+            @include body1-regular;
+            list-style-type: disc;
+            margin-bottom: 24px;
+        }
+
+        span {
+            @include body1-semibold;
+            display: inline;
+        }
+    }
+
+    &__responsibility {
+        @include h5-semibold;
+        margin-top: 48px;
+    }
+
+    &__responsibility-text {
+        @include body1-regular;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,75 @@
+body.grayscale {
+
+    .header,
+    .footer,
+    .section-faqs,
+    .cmp-image-mosaic,
+    .two-columns,
+    .animate-assets,
+    .distributor-icon,
+    .success-cases,
+    .hero-banner,
+    .hero-banner-principal,
+    .map,
+    .section-static-components,
+    .section-linkedin,
+    .card-descargas,
+    .partners,
+    .tabs-icon,
+    .table-responsive-cookies,
+    .rights-files,
+    .droppanel,
+    .news-section,
+    .news-detail,
+    .column-tabs,
+    .news-category-slider,
+    .component-social,
+    .accessibility,
+    .text-specialh3,
+    .accessibility-widget,
+    .component-social,
+    .service-status,
+    .cookie-modal__dialog,
+    .home-modal__dialog,
+    .inclusive-modal__btn,
+    .inclusive-modal__body,
+    .inclusive-modal__title,
+    .tab-panel-support,
+    .status,
+    .two-columns-v4
+
+    {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: gray;
+    }
+
+    .header { 
+        .container-menu ul li.active-parent, 
+        .container-menu ul li.selected,
+        .container-menu ul li a:hover,
+        .container-menu ul li a:focus-visible {
+            text-decoration-color: gray;
+        }   
+    }
+
+    .btn-link:hover,
+    .btn-link:focus,
+    a:hover,
+    a:focus {
+        text-decoration-color: gray !important;
+    }
+
+    .footer {
+        .button-up__link:hover,
+        .button-up__link:focus,
+        a:hover, a:focus {
+            text-decoration-color: gray !important;
+            background-color: gray;
+        }
+    }
+}

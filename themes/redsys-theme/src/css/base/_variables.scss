@@ -1,0 +1,154 @@
+:root {
+  /* Brand Colors */
+  --brand-color-1: #FE5B02; //sobre blanco → 3.13:1 (No cumple para texto normal) #D63F00;
+  --brand-color-2: #FAB81E; //sobre blanco → 1.76:1 (No cumple en ningún caso) #B27A00;
+  --brand-color-3: #2e5aac;
+  --brand-color-4: #30313f;
+
+  /* Grays */
+  --orange: #FE5B02;
+  --yellow: #FAB81E;
+  --white: #fff;
+  --gray-100: #F7F7F7;
+  --gray-200: #E2E2E2;
+  --gray-300: #BEBEBE;
+  --gray-400: #858585;
+  --gray-500: #696969;
+  --gray-600: #6b6c7e;
+  --gray-700: #495057;
+  --gray-800: #393a4a;
+  --gray-900: #272833;
+  --black: #111827;
+  
+
+  /* Theme Colors */
+  --primary: #0b5fff;
+  --secondary: #6b6c7e;
+  --success: #14532D;
+  --info: #2e5aac;
+  --warning: #C28B00;
+  --danger: #991D00;
+  --gray-dark: #393a4a;
+  --dark: #272833;
+  --light: #f1f2f5;
+  --lighter: #f7f8f9;
+
+  --primary-orange: #FF8A00;
+  --neutral-gray-light: #D9D9D9;
+  --neutral-dark-gray: #4E4E4E;
+  --text-color-default:#333333;
+  --text-secondary-redsys: #696969;
+  --light-gray: #EDEDED;
+  --link-orange: #D63F00;
+
+  /* Spacing */
+  --spacer-0: 0;
+  --spacer-1: 0.25rem;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 3rem;
+  --spacer-6: 4.5rem;
+  --spacer-7: 6rem;
+  --spacer-8: 7.5rem;
+  --spacer-9: 9rem;
+  --spacer-10: 10rem;
+  --spacer-20: 20rem;
+
+  /* General */
+  --body-bg: #fff;
+  --body-color: #272833;
+  --footer-bg: #333333;
+  --footer-color: #FFFFFF;
+  --footer-border-color: #fff;
+  --footer-bg-hover-color: #fff;
+  --footer-hover-color: #333333;
+  --border-radius: 0.25rem;
+  --border-radius-sm: 0.1875rem;
+  --border-radius-lg: 0.375rem;
+  --border-radius-circle: 50%;
+  --rounded-pill: 50rem;
+
+  /* Aspect Ratios */
+  --aspect-ratio: 100%;
+  --aspect-ratio-4-to-3: 75%;
+  --aspect-ratio-8-to-3: 37.5%;
+  --aspect-ratio-16-to-9: 56.25%;
+
+  /* Typography */
+  --font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-size-base: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-weight-lighter: lighter;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+
+  /* Headings */
+  --h1-font-size: 6rem;
+  --h2-font-size: 4rem;
+  --h3-font-size: 3rem;
+  --h4-font-size: 2rem;
+  --h5-font-size: 1.5rem;
+  --h6-font-size: 1.25rem;
+
+  /* Buttons */
+  --btn-primary-background-color: #FE5B02;
+  --btn-primary-border-color: #FE5B02;
+  --btn-primary-color: #fff;
+  --btn-primary-hover-background-color: #D63F00;
+  --btn-primary-hover-border-color: #D63F00;
+  --btn-primary-hover-color: #fff;
+
+  --btn-secondary-background-color: #fff;
+  --btn-secondary-border-color: #FE5B02;
+  --btn-secondary-color: #111827;
+  --btn-secondary-hover-background-color: #FE5B02;
+  --btn-secondary-hover-border-color: #FE5B02;
+  --btn-secondary-hover-color:#fff;
+
+  --btn-outline-primary-border-color: #0b5fff;
+  --btn-outline-primary-color: #0b5fff;
+  --btn-outline-primary-hover-background-color: #f0f5ff;
+  --btn-outline-primary-hover-border-color: #0b5fff;
+  --btn-outline-primary-hover-color: #0b5fff;
+
+  /* Service Status */
+  --progress-bg: #FFFFFF;
+  --service-bg: #F7F7F7;
+  --service-button-bg: #565A5C;
+  --service-progress-bg: linear-gradient(270deg, #39C09F 20.81%, #2E9B81 92.68%);
+  --status-green: #39C09F;
+
+  /*Two Columns */
+  --background-light-gray: #F3F3F3;
+
+  /* Border Radius Images */
+  --border-radius-img: 2rem;
+  --border-radius-img-sm: 1rem; 
+
+  /* Margin General*/
+  --margin-sm: 1rem;
+  --margin-md: 1.5rem;
+  --margin-base: 3rem;
+
+/* Icon-distributor  */
+
+--border-color-default: #E2E2E2;
+
+}
+
+$breakpoint-min-sm: 576px;
+$breakpoint-min-md: 768px;
+$breakpoint-min-lg: 1024px;
+$breakpoint-min-xl: 1200px;
+
+$breakpoint-max-sm: 575.98px;
+$breakpoint-max-md: 767.98px;
+$breakpoint-max-lg: 1023.98px;
+$breakpoint-max-xl: 1199.98px;

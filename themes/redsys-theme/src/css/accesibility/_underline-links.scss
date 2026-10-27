@@ -1,0 +1,32 @@
+body.underline-links a {    
+    text-decoration: underline !important;    
+    font-weight: bold !important;
+}
+
+body.underline-links .supramenu li.active a,
+body.underline-links .container-menu li.active > a,
+body.underline-links .container-menu ul li.active-parent > a {    
+    text-decoration:none !important;     
+    font-weight: bold !important;
+}
+
+body.underline-links .supramenu li.active a::after,
+body.underline-links .container-menu li.active > a::after,
+body.underline-links .container-menu ul li.active-parent > a::after {    
+    content: "";    
+    display: block;    
+    height: 2px;    
+    background-color: #FE5B02;    
+    margin-top: -3px;
+}
+    
+body.underline-links {    
+    .tab-panel-support {        
+        .nav-tabs .nav-link.active {            
+            text-decoration: none !important;         
+        }                
+        .nav-tabs .nav-link.active::after {            
+            display: block !important;        
+        }    
+    }
+}
