@@ -10,8 +10,6 @@ import com.liferay.journal.model.JournalArticle;
 import com.liferay.journal.service.JournalArticleLocalService;
 import com.liferay.journal.service.JournalArticleLocalServiceUtil;
 import com.liferay.journal.service.JournalArticleServiceUtil;
-import com.liferay.journal.util.comparator.ArticleDisplayDateComparator;
-import com.liferay.portal.kernel.dao.orm.QueryUtil;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
 import com.liferay.portal.kernel.json.JSONObject;
@@ -43,8 +41,7 @@ public class ResysServiceImpl implements RedsysService{
         DDMStructure estructura = getStructure(groupId, structureKey);
 
         List<JournalArticle> articleList =   _journalArticleLocalService.getStructureArticles(groupId,
-                    estructura.getStructureId(), QueryUtil.ALL_POS, QueryUtil.ALL_POS,
-                    new ArticleDisplayDateComparator(false));
+                    estructura.getStructureId());
         return articleList.get(0);
     }
     public DDMStructure getStructure(long groupId, String structureKey) {

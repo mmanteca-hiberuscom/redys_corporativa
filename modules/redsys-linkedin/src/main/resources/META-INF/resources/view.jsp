@@ -15,7 +15,7 @@
                     <div class="col-12 col-xl-7">
                         <article aria-label="Linkedin" class="card-news" aria-labelledby="news-title-1">
                             <header class="card-news__header">
-                               <a href="<%= urlHome %> " target="_blank"> <i class="social-icon">Linkedin</i></a>
+                               <a href="<%= post.getShareUrl() %> " target="_blank"> <i class="social-icon">Linkedin</i></a>
                                 <div>
                                     <p class="card-news__header-title"><liferay-ui:message key="redsys.linkedin.title" /></p>
                                     <p><%= post.getTiempoTranscurrido(locale) %> </p>
